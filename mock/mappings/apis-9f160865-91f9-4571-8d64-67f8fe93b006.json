@@ -1,0 +1,23 @@
+{
+  "id" : "9f160865-91f9-4571-8d64-67f8fe93b006",
+  "name" : "apis",
+  "request" : {
+    "url" : "/apis?orgPath=/STAT/872417842/970018131",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"total\":4,\"hits\":[{\"nationalComponent\":false,\"id\":\"01e7579b-dea1-408c-9992-95f38ad08572\",\"title\":\"Nasjonalt barnehageregister API\",\"publisher\":{\"id\":\"970018131\",\"name\":\"UTDANNINGSDIREKTORATET\",\"orgPath\":\"/STAT/872417842/970018131\",\"prefLabel\":{\"no\":\"Utdanningsdirektoratet\"}}},{\"nationalComponent\":false,\"id\":\"2178a9a2-c30a-4380-a36a-922102c500f2\",\"title\":\"Nasjonalt skoleregister API\",\"publisher\":{\"id\":\"970018131\",\"name\":\"UTDANNINGSDIREKTORATET\",\"orgPath\":\"/STAT/872417842/970018131\",\"prefLabel\":{\"no\":\"Utdanningsdirektoratet\"}}},{\"nationalComponent\":false,\"id\":\"79a81b2e-8642-4707-8a34-b9404144c990\",\"title\":\"Udir.Nxr.Fellestjeneste.Presentation\",\"publisher\":{\"id\":\"970018131\",\"name\":\"UTDANNINGSDIREKTORATET\",\"orgPath\":\"/STAT/872417842/970018131\",\"prefLabel\":{\"no\":\"Utdanningsdirektoratet\"}}},{\"nationalComponent\":false,\"id\":\"93ed20df-1c5f-437c-8001-7769228b4f67\",\"title\":\"Nasjonalt opplæringskontorregister API\",\"publisher\":{\"id\":\"970018131\",\"name\":\"UTDANNINGSDIREKTORATET\",\"orgPath\":\"/STAT/872417842/970018131\",\"prefLabel\":{\"no\":\"Utdanningsdirektoratet\"}}}]}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:13:41 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "9f160865-91f9-4571-8d64-67f8fe93b006",
+  "persistent" : true,
+  "insertionIndex" : 1485
+}

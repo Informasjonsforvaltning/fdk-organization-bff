@@ -1,0 +1,23 @@
+{
+  "id" : "f11f2320-6fb1-48f8-918c-b9bde9e9f61e",
+  "name" : "apis",
+  "request" : {
+    "url" : "/apis?orgPath=/STAT/872417842/971035854",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"total\":1,\"hits\":[{\"nationalComponent\":false,\"id\":\"4bdb0b17-1d81-4021-a7ee-eb28812f58ac\",\"title\":\"FS-API\",\"description\":\"FS-API'et er et generelt grensesnitt mot FS. Det bruker Basic Auth (brukernavn og passord) for å hente et token (JWT). Tokenet brukes til autentisering og autorisering i resten av tjenestene. Noen generelle prinsipper: Internasjonale standarder for feltnavn og verdier er i engelsk lowercase (f.eks. meta, href, limit, sortBy, fields, true, false osv). FS-spesifikke feltnavn og verdier er på norsk, og kodeverdier er i tillegg i uppercase (f.eks. fornavn, etternavn, rolle, studieprogram, AKTIV, SLUTTET osv). Feltutvalg (fields) og sortering (sortBy) angis som kommaseparerte lister, der minus angir omvendt sortering (f.eks. sortBy=felt1,felt2-,felt3). Paginering angis ved start og limit, med default hhv. 1 og 10 (limit=0 gir alt). Filtre er separate felt, der man normalt angir søkeverdi direkte (felt=verdi) - med wildcard-notasjon (.*) i tekstfelt lengre enn 1 tegn. Noen felt har også andre muligheter å teste på: 1. Ulikhet (felt=!verdi angir at feltet er forskjellig fra verdien). 2. Større/mindre (felt=verdi angir at feltet er hhv. &lt;= eller &gt;= verdien). 3. Om et felt har verdi i det hele tatt (felt=! og felt=_ angir hhv. at feltet har verdi/er tomt). Fritekstsøk er generelt samlet i et eget fritekstfelt (NB inntil videre er det case-sensitivt og krever wildcard for annet enn eksakt søk). For strukturerte felt (dvs. med underfelt) brukes dot-notasjon (f.eks. emne.kode). Alle GET-operasjoner forekommer i individ- og collection-form, hhv. med og uten ID til slutt. For individkall er default feltutvalg (fields) alle felt, mens for collection-kall er default kun ID.\",\"descriptionFormatted\":\"FS-API'et er et generelt grensesnitt mot FS. Det bruker Basic Auth (brukernavn og passord) for å hente et token (JWT). Tokenet brukes til autentisering og autorisering i resten av tjenestene. Noen generelle prinsipper: Internasjonale standarder for feltnavn og verdier er i engelsk lowercase (f.eks. meta, href, limit, sortBy, fields, true, false osv). FS-spesifikke feltnavn og verdier er på norsk, og kodeverdier er i tillegg i uppercase (f.eks. fornavn, etternavn, rolle, studieprogram, AKTIV, SLUTTET osv). Feltutvalg (fields) og sortering (sortBy) angis som kommaseparerte lister, der minus angir omvendt sortering (f.eks. sortBy=felt1,felt2-,felt3). Paginering angis ved start og limit, med default hhv. 1 og 10 (limit=0 gir alt). Filtre er separate felt, der man normalt angir søkeverdi direkte (felt=verdi) - med wildcard-notasjon (.*) i tekstfelt lengre enn 1 tegn. Noen felt har også andre muligheter å teste på: 1. Ulikhet (felt=!verdi angir at feltet er forskjellig fra verdien). 2. Større/mindre (felt=<verdi og felt=>verdi angir at feltet er hhv. <= eller >= verdien). 3. Om et felt har verdi i det hele tatt (felt=! og felt=_ angir hhv. at feltet har verdi/er tomt). Fritekstsøk er generelt samlet i et eget fritekstfelt (NB inntil videre er det case-sensitivt og krever wildcard for annet enn eksakt søk). For strukturerte felt (dvs. med underfelt) brukes dot-notasjon (f.eks. emne.kode). Alle GET-operasjoner forekommer i individ- og collection-form, hhv. med og uten ID til slutt. For individkall er default feltutvalg (fields) alle felt, mens for collection-kall er default kun ID.\",\"publisher\":{\"id\":\"971035854\",\"name\":\"UNIVERSITETET I OSLO\",\"orgPath\":\"/STAT/872417842/971035854\",\"prefLabel\":{\"no\":\"Universitetet i Oslo\"}}}]}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:12:40 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "f11f2320-6fb1-48f8-918c-b9bde9e9f61e",
+  "persistent" : true,
+  "insertionIndex" : 381
+}

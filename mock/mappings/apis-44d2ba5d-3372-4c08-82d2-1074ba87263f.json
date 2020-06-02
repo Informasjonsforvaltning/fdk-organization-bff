@@ -1,0 +1,23 @@
+{
+  "id" : "44d2ba5d-3372-4c08-82d2-1074ba87263f",
+  "name" : "apis",
+  "request" : {
+    "url" : "/apis?orgPath=/STAT/872417842/960885406",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"total\":1,\"hits\":[{\"nationalComponent\":false,\"id\":\"b6b9cf6b-7444-4f92-80c0-d69fd65d8a16\",\"title\":\"KontoInformasjonAPI\",\"description\":\"Hent kontoinformasjon for kunder i Lånekassen\",\"descriptionFormatted\":\"Hent kontoinformasjon for kunder i Lånekassen\",\"publisher\":{\"id\":\"960885406\",\"name\":\"STATENS LÅNEKASSE FOR UTDANNING\",\"orgPath\":\"/STAT/872417842/960885406\",\"prefLabel\":{\"no\":\"STATENS LÅNEKASSE FOR UTDANNING\"}}}]}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:12:24 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "44d2ba5d-3372-4c08-82d2-1074ba87263f",
+  "persistent" : true,
+  "insertionIndex" : 101
+}

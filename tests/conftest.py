@@ -3,7 +3,6 @@ import re
 import time
 import pytest
 import requests
-from mock import AsyncMock
 from urllib3.exceptions import MaxRetryError, NewConnectionError
 
 from src.utils import ServiceKey
@@ -14,12 +13,13 @@ from tests.test_data import info_model_response, concept_response, dataset_respo
 @pytest.fixture(scope="session")
 def wait_for_ready():
     timeout = time.time() + 20
+
     try:
         while True:
             response = requests.get("http://localhost:8000/ready")
             if response.status_code == 200:
                 break
-            if time.time() > timeout:
+            elif time.time() > timeout:
                 pytest.fail(
                     'Test function setup: timed out while waiting for organization-bff, last response '
                     'was {0}'.format(response.status_code))

@@ -1,0 +1,23 @@
+{
+  "id" : "6df69a4b-2e01-435e-beb0-b9a71dc4f895",
+  "name" : "apis",
+  "request" : {
+    "url" : "/apis?orgPath=/KOMMUNE/958935420/976819845",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"total\":1,\"hits\":[{\"nationalComponent\":true,\"isOpenAccess\":true,\"isOpenLicense\":true,\"isFree\":true,\"statusCode\":\"STABLE\",\"id\":\"b964e376-9a55-4657-8509-b22947e264c3\",\"title\":\"API catalog\",\"description\":\"An API for registering and managing APIs in a catalog\",\"descriptionFormatted\":\"An API for registering and managing APIs in a catalog\",\"formats\":[\"application/json\",\"*/*\",\"application/text\",\"text/plain\"],\"publisher\":{\"id\":\"920204368\",\"name\":\"OSLO KOMMUNE OSLO ORIGO\",\"orgPath\":\"/KOMMUNE/958935420/976819845/920204368\",\"prefLabel\":{\"no\":\"OSLO KOMMUNE ORIGO DIGITALSERINGSENHET\"}}}]}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:14:19 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "6df69a4b-2e01-435e-beb0-b9a71dc4f895",
+  "persistent" : true,
+  "insertionIndex" : 2173
+}

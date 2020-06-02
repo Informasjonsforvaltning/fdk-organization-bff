@@ -100,9 +100,11 @@ def record_content_from_old_harvesters(env=None):
     old_dataservices = "http://localhost:8080/apis?orgPath="
     old_concepts = "http://localhost:8080/concepts?orgPath="
     old_info_model = "http://localhost:8080/informationmodels?orgPath="
-    with open(f"{os.getcwd()}/mock/mappings/organizations-21af49fb-e881-4c42-8228-26f3fc43ea9c.json") as mockorgs:
+
+    with open(f"{os.getcwd()}/mock/mappings/organizations-eecaa36f-d383-4f91-87cb-5035515bfa77.json") as mockorgs:
         organizations = json.loads(mockorgs.read())
-        for org in organizations['response']['jsonBody']:
+        org_json = json.loads(organizations['response']['jsonBody'])
+        for org in org_json:
             org_catalog_orgPath = org["orgPath"]
             orgPath = get_org_path_for_old_harvester(org["orgPath"])
             print(f"-----collecting data for org {orgPath} ----.")

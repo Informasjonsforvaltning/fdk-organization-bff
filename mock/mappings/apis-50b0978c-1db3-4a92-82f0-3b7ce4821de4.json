@@ -1,0 +1,23 @@
+{
+  "id" : "50b0978c-1db3-4a92-82f0-3b7ce4821de4",
+  "name" : "apis",
+  "request" : {
+    "url" : "/apis?orgPath=PRIVAT/937901003",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"total\":0,\"hits\":[]}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:13:26 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "50b0978c-1db3-4a92-82f0-3b7ce4821de4",
+  "persistent" : true,
+  "insertionIndex" : 1206
+}

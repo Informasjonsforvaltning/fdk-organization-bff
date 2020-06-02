@@ -1,0 +1,23 @@
+{
+  "id" : "740b8c63-c282-46f9-abcd-b0563ab8efe8",
+  "name" : "concepts",
+  "request" : {
+    "url" : "/concepts?orgPath=/KOMMUNE/964338531",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"_embedded\" : {\n    \"concepts\" : [ {\n      \"id\" : \"eb068a20-cb17-42be-8daf-6d9daf981a91\",\n      \"uri\" : \"https://fellesdatakatalog.brreg.no/api/concepts/eb068a20-cb17-42be-8daf-6d9daf981a91\",\n      \"identifier\" : \"https://registrering-begrep-api.fellesdatakatalog.digdir.no/964338531/2e7e82d6-c2e5-4681-bae5-00903b003046\",\n      \"application\" : [ ],\n      \"definition\" : {\n        \"text\" : {\n          \"nb\" : \"Brukeren autentiseres først etter å ha presentert to eller flere informasjoner (faktorer) om bruker som systemet kjenner til.\"\n        },\n        \"sourceRelationship\" : \"egendefinert\",\n        \"sources\" : [ ]\n      },\n      \"subject\" : {\n        \"nb\" : \"Informasjonssikkerhet, Personvern\"\n      },\n      \"prefLabel\" : {\n        \"nb\" : \"Flerfaktorautentisering\"\n      },\n      \"altLabel\" : [ ],\n      \"hiddenLabel\" : [ ],\n      \"example\" : {\n        \"nb\" : \"Sikker pålogging, bruk av skytjenester, BankID, MinID, Commfides, Buypass,\"\n      },\n      \"seeAlso\" : [ ],\n      \"publisher\" : {\n        \"uri\" : \"http://data.brreg.no/enhetsregisteret/enhet/964338531\",\n        \"name\" : \"BERGEN KOMMUNE\",\n        \"orgPath\" : \"/KOMMUNE/964338531\",\n        \"prefLabel\" : {\n          \"no\" : \"BERGEN KOMMUNE\"\n        }\n      },\n      \"harvest\" : {\n        \"firstHarvested\" : \"2019-11-27T13:20:59.659+0000\",\n        \"lastHarvested\" : \"2020-06-02T08:40:57.927+0000\"\n      }\n    }, {\n      \"id\" : \"cef6c17b-17c1-4f38-a790-a60d2d667815\",\n      \"uri\" : \"https://fellesdatakatalog.brreg.no/api/concepts/cef6c17b-17c1-4f38-a790-a60d2d667815\",\n      \"identifier\" : \"https://registrering-begrep-api.fellesdatakatalog.digdir.no/964338531/3b9aa4fd-00d7-48c0-9c63-7e5480bd83dd\",\n      \"application\" : [ ],\n      \"definition\" : {\n        \"text\" : {\n          \"nb\" : \"Evnen til en virksomhet å akseptere en annen virksomhets arbeid knyttet til identitets- og tilgangsstyring\"\n        },\n        \"sourceRelationship\" : \"egendefinert\",\n        \"sources\" : [ ]\n      },\n      \"subject\" : {\n        \"nb\" : \"IKT, Tilgangsstyring\"\n      },\n      \"prefLabel\" : {\n        \"nb\" : \"Føderere\"\n      },\n      \"altLabel\" : [ ],\n      \"hiddenLabel\" : [ ],\n      \"example\" : {\n        \"nb\" : \"ADFS, ID-Porten, Feide, HelseID\"\n      },\n      \"seeAlso\" : [ ],\n      \"publisher\" : {\n        \"uri\" : \"http://data.brreg.no/enhetsregisteret/enhet/964338531\",\n        \"name\" : \"BERGEN KOMMUNE\",\n        \"orgPath\" : \"/KOMMUNE/964338531\",\n        \"prefLabel\" : {\n          \"no\" : \"BERGEN KOMMUNE\"\n        }\n      },\n      \"harvest\" : {\n        \"firstHarvested\" : \"2019-11-27T13:20:59.683+0000\",\n        \"lastHarvested\" : \"2020-06-02T08:40:57.835+0000\"\n      }\n    } ]\n  },\n  \"page\" : {\n    \"size\" : 10,\n    \"totalElements\" : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:12:40 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "740b8c63-c282-46f9-abcd-b0563ab8efe8",
+  "persistent" : true,
+  "insertionIndex" : 375
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "a1344daa-54fa-41da-8b35-ee5cbd214e2d",
+  "name" : "concepts",
+  "request" : {
+    "url" : "/concepts?orgPath=STAT/912660680/974760673",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"page\" : {\n    \"size\" : 10,\n    \"totalElements\" : 0,\n    \"totalPages\" : 0,\n    \"number\" : 0\n  }\n}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:12:18 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "a1344daa-54fa-41da-8b35-ee5cbd214e2d",
+  "persistent" : true,
+  "insertionIndex" : 8
+}

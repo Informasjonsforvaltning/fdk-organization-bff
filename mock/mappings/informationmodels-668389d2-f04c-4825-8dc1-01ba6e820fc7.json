@@ -1,0 +1,23 @@
+{
+  "id" : "668389d2-f04c-4825-8dc1-01ba6e820fc7",
+  "name" : "informationmodels",
+  "request" : {
+    "url" : "/informationmodels?orgPath=PRIVAT/937896859",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"page\" : {\n    \"size\" : 10,\n    \"totalElements\" : 0,\n    \"totalPages\" : 0,\n    \"number\" : 0\n  },\n  \"aggregations\" : { }\n}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:12:51 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "668389d2-f04c-4825-8dc1-01ba6e820fc7",
+  "persistent" : true,
+  "insertionIndex" : 569
+}

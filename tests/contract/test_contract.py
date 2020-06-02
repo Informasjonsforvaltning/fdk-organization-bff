@@ -4,14 +4,14 @@ import requests
 service_url = "http://localhost:8000"
 org_catalog_url = f"{service_url}/organizationcatalogs"
 # update if change in mockdata
-expected_size = 8
+expected_size = 272
 
 
 class TestSearchAll:
 
     @pytest.mark.contract
     def test_has_correct_format(self, wait_for_ready):
-        result = requests.get(url=org_catalog_url, timeout=10)
+        result = requests.get(url=org_catalog_url, timeout=30)
         assert result.status_code == 200
         assert len(result.json()["organizations"]) == expected_size
         for org in result.json()["organizations"]:

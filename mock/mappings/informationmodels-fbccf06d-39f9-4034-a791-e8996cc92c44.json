@@ -1,0 +1,23 @@
+{
+  "id" : "fbccf06d-39f9-4034-a791-e8996cc92c44",
+  "name" : "informationmodels",
+  "request" : {
+    "url" : "/informationmodels?orgPath=/STAT/972417866",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"page\" : {\n    \"size\" : 10,\n    \"totalElements\" : 0,\n    \"totalPages\" : 0,\n    \"number\" : 0\n  },\n  \"aggregations\" : { }\n}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:14:19 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "fbccf06d-39f9-4034-a791-e8996cc92c44",
+  "persistent" : true,
+  "insertionIndex" : 2170
+}

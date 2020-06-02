@@ -1,0 +1,23 @@
+{
+  "id" : "b4219b04-5a23-428f-84c5-84b1288bf88a",
+  "name" : "apis",
+  "request" : {
+    "url" : "/apis?orgPath=STAT/983887457/889640782",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"total\":0,\"hits\":[]}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:12:23 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "b4219b04-5a23-428f-84c5-84b1288bf88a",
+  "persistent" : true,
+  "insertionIndex" : 78
+}

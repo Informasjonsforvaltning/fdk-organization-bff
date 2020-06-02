@@ -1,0 +1,23 @@
+{
+  "id" : "5a9ac40a-0b1b-4d67-9e1b-242a2df8efc4",
+  "name" : "concepts",
+  "request" : {
+    "url" : "/concepts?orgPath=PRIVAT/980374181",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"page\" : {\n    \"size\" : 10,\n    \"totalElements\" : 0,\n    \"totalPages\" : 0,\n    \"number\" : 0\n  }\n}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:13:11 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "5a9ac40a-0b1b-4d67-9e1b-242a2df8efc4",
+  "persistent" : true,
+  "insertionIndex" : 944
+}

@@ -1,12 +1,13 @@
 import asyncio
 import os
+import time
 from json.decoder import JSONDecodeError
 
 import requests
 import logging
 import httpx
 from httpcore import ConnectError, ConnectTimeout
-from httpx import HTTPError
+from httpx import HTTPError, ReadTimeout
 from src.utils import ServiceKey, FetchFromServiceException
 
 
@@ -97,7 +98,6 @@ def get_organizations():
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     organizations = loop.run_until_complete(get_organizations_async())
-    loop.close()
     return organizations
 
 
@@ -109,7 +109,8 @@ async def get_organizations_async():
                                       timeout=10)
             result.raise_for_status()
             return result.json()
-        except (ConnectError, HTTPError, ConnectTimeout):
+        except (ConnectError, HTTPError, ConnectTimeout, ReadTimeout) as err:
+            logging.error(err)
             raise FetchFromServiceException(
                 execution_point=ServiceKey.ORGANIZATIONS,
                 url=service_urls[ServiceKey.ORGANIZATIONS]
@@ -119,16 +120,18 @@ async def get_organizations_async():
 async def get_concepts_for_organization(orgPath):
     async with httpx.AsyncClient() as client:
         try:
+            start_time = time.time()
             result = await client.get(url=f"{service_urls[ServiceKey.CONCEPTS]}?orgPath={orgPath}",
                                       timeout=10)
             result.raise_for_status()
             return result.json()
-        except (ConnectError, HTTPError, ConnectTimeout):
+        except (ConnectError, HTTPError, ConnectTimeout, ReadTimeout) as err:
+            logging.error(err)
             raise FetchFromServiceException(
                 execution_point=ServiceKey.CONCEPTS,
                 url=service_urls[ServiceKey.CONCEPTS]
             )
-        except JSONDecodeError:
+        except (JSONDecodeError):
             return {
                 "page": {
                     "totalElements": 0
@@ -138,13 +141,15 @@ async def get_concepts_for_organization(orgPath):
 
 async def get_datasets_for_organization(orgPath):
     async with httpx.AsyncClient() as client:
+        start_time = time.time()
         try:
             result = await client.get(url=f"{service_urls[ServiceKey.DATA_SETS]}?orgPath={orgPath}",
                                       headers={"Accept": "application/json"},
                                       timeout=10)
             result.raise_for_status()
             return result.json()
-        except (ConnectError, HTTPError, ConnectTimeout):
+        except (ConnectError, HTTPError, ConnectTimeout, ReadTimeout) as err:
+            logging.error(err)
             raise FetchFromServiceException(
                 execution_point=ServiceKey.DATA_SETS,
                 url=service_urls[ServiceKey.DATA_SETS]
@@ -159,12 +164,14 @@ async def get_datasets_for_organization(orgPath):
 
 async def get_dataservices_for_organization(orgPath):
     async with httpx.AsyncClient() as client:
+        start_time = time.time()
         try:
             result = await client.get(url=f"{service_urls[ServiceKey.DATA_SERVICES]}?orgPath={orgPath}",
                                       timeout=10)
             result.raise_for_status()
             return result.json()
-        except (ConnectError, HTTPError, ConnectTimeout):
+        except (ConnectError, HTTPError, ConnectTimeout, ReadTimeout) as err:
+            logging.error(err)
             raise FetchFromServiceException(
                 execution_point=ServiceKey.CONCEPTS,
                 url=service_urls[ServiceKey.CONCEPTS]
@@ -188,7 +195,8 @@ async def get_informationmodels_for_organization(orgPath):
                                           timeout=10)
                 result.raise_for_status()
             return result.json()
-        except (ConnectError, HTTPError, ConnectTimeout):
+        except (ConnectError, HTTPError, ConnectTimeout, ReadTimeout) as err:
+            logging.error(err)
             raise FetchFromServiceException(
                 execution_point=ServiceKey.CONCEPTS,
                 url=service_urls[ServiceKey.CONCEPTS]

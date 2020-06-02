@@ -1,0 +1,23 @@
+{
+  "id" : "8502a6fb-19cd-4d5e-ab16-0659633b701f",
+  "name" : "apis",
+  "request" : {
+    "url" : "/apis?orgPath=/STAT/977161630/970205039",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"total\":1,\"hits\":[{\"nationalComponent\":true,\"isOpenAccess\":true,\"isOpenLicense\":true,\"isFree\":true,\"statusCode\":\"STABLE\",\"id\":\"13677c52-373c-4e5b-adfd-30457e390b09\",\"title\":\"HydApi\",\"publisher\":{\"id\":\"970205039\",\"name\":\"NORGES VASSDRAGS- OG ENERGIDIREKTORAT (NVE)\",\"orgPath\":\"/STAT/977161630/970205039\",\"prefLabel\":{\"no\":\"Norges vassdrags- og energidirektorat\"}}}]}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:14:01 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "8502a6fb-19cd-4d5e-ab16-0659633b701f",
+  "persistent" : true,
+  "insertionIndex" : 1845
+}

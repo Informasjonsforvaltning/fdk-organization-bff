@@ -1,0 +1,23 @@
+{
+  "id" : "ce0c654d-c159-43bc-8dbd-abd26c68b252",
+  "name" : "concepts",
+  "request" : {
+    "url" : "/concepts?orgPath=KOMMUNE/964948798",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"page\" : {\n    \"size\" : 10,\n    \"totalElements\" : 0,\n    \"totalPages\" : 0,\n    \"number\" : 0\n  }\n}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:13:20 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "ce0c654d-c159-43bc-8dbd-abd26c68b252",
+  "persistent" : true,
+  "insertionIndex" : 1096
+}

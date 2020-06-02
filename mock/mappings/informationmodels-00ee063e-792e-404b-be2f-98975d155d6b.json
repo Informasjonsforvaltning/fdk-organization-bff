@@ -1,0 +1,23 @@
+{
+  "id" : "00ee063e-792e-404b-be2f-98975d155d6b",
+  "name" : "informationmodels",
+  "request" : {
+    "url" : "/informationmodels?orgPath=STAT/972417858/971040238",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n  \"_embedded\" : {\n    \"informationmodels\" : [ {\n      \"id\" : \"9c0253dc-f077-4831-a9c7-15843644686d\",\n      \"title\" : {\n        \"nb\" : \"Kommunereform - API\"\n      },\n      \"publisher\" : {\n        \"uri\" : \"https://data.brreg.no/enhetsregisteret/api/enheter/971040238\",\n        \"name\" : \"STATENS KARTVERK\",\n        \"orgPath\" : \"STAT/972417858/971040238\"\n      },\n      \"harvest\" : {\n        \"firstHarvested\" : \"2020-06-02T00:01:30\",\n        \"lastHarvested\" : \"2020-06-02T12:10:29\",\n        \"lastChanged\" : \"2020-06-02T00:01:30\"\n      },\n      \"harvestSourceUri\" : \"http://fdk-nginx-search:8080/api/registration/apis/32f28b16-8c93-4148-a831-0bf3659930fc\",\n      \"schema\" : \"{\\\"$schema\\\":\\\"http://json-schema.org/draft-06/schema#\\\",\\\"$id\\\":\\\"https://fellesdatakatalog.brreg.no/informationmodels/32f28b16-8c93-4148-a831-0bf3659930fc/schema\\\",\\\"definitions\\\":{\\\"Eiendom\\\":{\\\"properties\\\":{\\\"erstatter\\\":{\\\"type\\\":\\\"string\\\"},\\\"erstattetav\\\":{\\\"type\\\":\\\"string\\\"},\\\"id\\\":{\\\"type\\\":\\\"string\\\"},\\\"nummer\\\":{\\\"type\\\":\\\"string\\\"},\\\"type\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"id\\\",\\\"nummer\\\",\\\"type\\\"],\\\"type\\\":\\\"object\\\"},\\\"Kommune\\\":{\\\"properties\\\":{\\\"fylke\\\":{\\\"type\\\":\\\"string\\\"},\\\"gyldigtil\\\":{\\\"format\\\":\\\"date\\\",\\\"type\\\":\\\"string\\\"},\\\"id\\\":{\\\"type\\\":\\\"string\\\"},\\\"navn\\\":{\\\"type\\\":\\\"string\\\"},\\\"type\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"fylke\\\",\\\"id\\\",\\\"navn\\\",\\\"type\\\"],\\\"type\\\":\\\"object\\\"},\\\"EiendomResultat\\\":{\\\"properties\\\":{\\\"code\\\":{\\\"format\\\":\\\"int32\\\",\\\"type\\\":\\\"integer\\\"},\\\"data\\\":{\\\"$ref\\\":\\\"#/definitions/Eiendom\\\",\\\"required\\\":[\\\"kommune\\\"],\\\"type\\\":\\\"object\\\"},\\\"message\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"code\\\",\\\"data\\\",\\\"message\\\"],\\\"type\\\":\\\"object\\\"},\\\"KommuneResultat\\\":{\\\"properties\\\":{\\\"code\\\":{\\\"format\\\":\\\"int32\\\",\\\"type\\\":\\\"integer\\\"},\\\"data\\\":{\\\"properties\\\":{\\\"erstatter\\\":{\\\"items\\\":{\\\"$ref\\\":\\\"#/definitions/Kommune\\\"},\\\"type\\\":\\\"array\\\"},\\\"erstattetav\\\":{\\\"items\\\":{\\\"$ref\\\":\\\"#/definitions/Kommune\\\"},\\\"type\\\":\\\"array\\\"},\\\"kommune\\\":{\\\"$ref\\\":\\\"#/definitions/Kommune\\\",\\\"type\\\":\\\"object\\\"}},\\\"required\\\":[\\\"kommune\\\"],\\\"type\\\":\\\"object\\\"},\\\"message\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"code\\\",\\\"data\\\",\\\"message\\\"],\\\"type\\\":\\\"object\\\"},\\\"Søk\\\":{\\\"properties\\\":{\\\"code\\\":{\\\"format\\\":\\\"int32\\\",\\\"type\\\":\\\"integer\\\"},\\\"data\\\":{\\\"items\\\":{\\\"oneOf\\\":[{\\\"$ref\\\":\\\"#/definitions/Eiendom\\\"},{\\\"$ref\\\":\\\"#/definitions/Kommune\\\"}]},\\\"type\\\":\\\"array\\\"},\\\"message\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"code\\\",\\\"data\\\",\\\"message\\\"],\\\"type\\\":\\\"object\\\"}}}\"\n    } ]\n  },\n  \"page\" : {\n    \"size\" : 10,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  },\n  \"aggregations\" : { }\n}",
+    "headers" : {
+      "Server" : "nginx/1.17.10",
+      "Date" : "Tue, 02 Jun 2020 10:12:25 GMT",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Vary" : [ "Accept-Encoding", "Accept, Accept-Encoding" ],
+      "Via" : "1.1 google",
+      "Alt-Svc" : "clear"
+    }
+  },
+  "uuid" : "00ee063e-792e-404b-be2f-98975d155d6b",
+  "persistent" : true,
+  "insertionIndex" : 113
+}
