@@ -1,8 +1,6 @@
 import asyncio
 import os
 from json.decoder import JSONDecodeError
-
-import requests
 import logging
 import httpx
 from httpcore import ConnectError, ConnectTimeout

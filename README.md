@@ -13,10 +13,7 @@ fdk-organization-bff
 #### Env variables:
 ```          
 ORGANIZATION_CATALOG_URL=http://localhost:8080/organizations
-CONCEPT_HARVESTER_URL=http://localhost:8080/concepts
-DATASET_HARVESTER_URL=http://localhost:8080/datasets
-INFORMATIONMODELS_HARVESTER_URL=http://localhost:8080/informationmodels
-DATASERVICE_HARVESTER_URL=http://localhost:8080/apis
+ES_HOST=http://localhost:9200
 ```
 
 ```

@@ -75,7 +75,7 @@ def update_organization_catalog(ctx, env=None):
         org_catalog_url = "https://organization-catalogue.{0}.fellesdatakatalog.digdir.no/organizations/".format(env)
     else:
         publisher_url = "https://www.fellesdatakatalog.digdir.no/publisher"
-        org_catalog_url = "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/".format(env)
+        org_catalog_url = "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/"
 
     print(publisher_url)
     print(org_catalog_url)
@@ -89,43 +89,27 @@ def update_organization_catalog(ctx, env=None):
 
 
 @task
-def record_harvest_data(ctx, old=False, with_org_mock=True):
-    if old:
-        record_content_from_old_harvesters()
-
-
-def record_content_from_old_harvesters(env=None):
-    # start wiremock recording on https://www.fellesdatakatalog.digdir.no/api/
-    old_datasets = "http://localhost:8080/datasets?orgPath="
-    old_dataservices = "http://localhost:8080/apis?orgPath="
-    old_concepts = "http://localhost:8080/concepts?orgPath="
-    old_info_model = "http://localhost:8080/informationmodels?orgPath="
-    with open(f"{os.getcwd()}/mock/mappings/organizations-21af49fb-e881-4c42-8228-26f3fc43ea9c.json") as mockorgs:
-        organizations = json.loads(mockorgs.read())
-        for org in organizations['response']['jsonBody']:
-            org_catalog_orgPath = org["orgPath"]
-            orgPath = get_org_path_for_old_harvester(org["orgPath"])
-            print(f"-----collecting data for org {orgPath} ----.")
-            dataset_res = requests.get(url=f"{old_datasets}{orgPath}", headers={'Accept': 'application/json'})
-            dataset_res = requests.get(url=f"{old_datasets}{org_catalog_orgPath}", headers={'Accept': 'application/json'})
-            print("datasets: {0}".format(dataset_res.status_code))
-            dataservice_res = requests.get(url=f"{old_dataservices}{orgPath}")
-            dataservice_res = requests.get(url=f"{old_dataservices}{org_catalog_orgPath}")
-            print("dataservices: {0}".format(dataservice_res.status_code))
-            concepts_res = requests.get(url=f"{old_concepts}{orgPath}")
-            concepts_res = requests.get(url=f"{old_concepts}{org_catalog_orgPath}")
-            print("concepts: {0}".format(concepts_res.status_code))
-            info_res = requests.get(url=f"{old_info_model}{org_catalog_orgPath}")
-            info_res = requests.get(url=f"{old_info_model}{orgPath}")
-            print("informationmodels: {0}".format(info_res.status_code))
-
-
-def get_content_from_new_harvesters():
-    print("TODO")
-
-
-def get_org_path_for_old_harvester(orgPath: str):
-    if orgPath.startswith("/"):
-        return orgPath
+def record_org_data(ctx, env=None):
+    mock_url = "http://localhost:8080"
+    if env:
+        org_catalog_url = "https://organization-catalogue.{0}.fellesdatakatalog.digdir.no".format(env)
     else:
-        return f"/{orgPath}"
+        org_catalog_url = "https://organization-catalogue.fellesdatakatalog.digdir.no/"
+
+    start_recording_body = json.dumps({
+        "targetBaseUrl": org_catalog_url
+    })
+
+    start_recording_curl = "curl -d '{\"targetBaseUrl\": \"https://organization-catalogue.fellesdatakatalog.digdir.no" \
+                           "\" }' -H 'Content-Type: application/json' http://localhost:8080/__admin/recordings/start"
+    stop_recording_curl = "curl -I -X POST  http://localhost:8080/__admin/recordings/stop"
+    org_catalog_curl = f"curl -I -X GET {mock_url}/organizations -H 'Accept: application/json'"
+
+    ctx.run("docker-compose up -d")
+    breakpoint()
+    ctx.run(start_recording_curl)
+    breakpoint()
+    ctx.run(org_catalog_curl)
+    breakpoint()
+    ctx.run(stop_recording_curl)
+    breakpoint()
