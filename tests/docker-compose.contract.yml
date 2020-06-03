@@ -6,17 +6,26 @@ services:
       - "8080:8080"
     volumes:
       - $MOCK_DIR/mock/mappings:/home/wiremock/mappings
+  elasticsearch:
+    image: digdir/fdk-mockdata/es-7:v1
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - cluster.name=elasticsearch
+      - xpack.security.enabled=false
+      - xpack.monitoring.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - discovery.type=single-node
   fdk-organization-bff:
       image: $TEST_IMAGE
       ports:
         - "8000:8000"
       depends_on:
         - servicesmock
+        - elasticsearch
       environment:
-        - HOST_URL=http://localhost
-        - HOST_PORT=8000
-        - ORGANIZATION_CATALOG_URL=http://servicesmock:8080/organizations
-        - CONCEPT_HARVESTER_URL=http://servicesmock:8080/concepts
-        - DATASET_HARVESTER_URL=http://servicesmock:8080/datasets
-        - DATASERVICE_HARVESTER_URL=http://servicesmock:8080/apis
-        - INFORMATIONMODELS_HARVESTER_URL=http://servicesmock:8080/informationmodels
+        - ORGANIZATION_CATALOG_URL=servicesmock/organizations
+        - ELASTIC_HOST=elasticsearch
+        - ELASTIC_PORT=9200
+        - ELASTIC_TCP_PORT=9300

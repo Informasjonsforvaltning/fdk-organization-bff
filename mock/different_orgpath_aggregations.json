@@ -1,0 +1,94 @@
+{
+    "took": 272,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 5648,
+            "relation": "eq"
+        },
+        "max_score": null,
+        "hits": []
+    },
+    "aggregations": {
+        "group_by_res": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+                {
+                    "key": "STAT/912660680/974760673",
+                    "doc_count": 25,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "informationmodels",
+                                "doc_count": 25
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/912660680/974760673",
+                    "doc_count": 251,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "concepts",
+                                "doc_count": 241
+                            },
+                            {
+                                "key": "datasets",
+                                "doc_count": 10
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "STAT/972417831/915429785",
+                    "doc_count": 54,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 37
+                            },
+                            {
+                                "key": "concepts",
+                                "doc_count": 15
+                            },
+                            {
+                                "key": "informationmodels",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "STAT/972417866/961181399",
+                    "doc_count": 12,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "informationmodels",
+                                "doc_count": 12
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

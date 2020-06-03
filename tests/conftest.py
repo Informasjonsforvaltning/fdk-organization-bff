@@ -3,7 +3,6 @@ import re
 import time
 import pytest
 import requests
-from mock import AsyncMock
 from urllib3.exceptions import MaxRetryError, NewConnectionError
 
 from src.utils import ServiceKey
@@ -62,14 +61,6 @@ def get_xhttp_mock(status_code, service_key: None):
         def __init__(self, status):
             if service_key == ServiceKey.ORGANIZATIONS:
                 self.json_data = [org_1, org_2, org_3]
-            if service_key == ServiceKey.CONCEPTS:
-                self.json_data = concept_response(77)
-            if service_key == ServiceKey.DATA_SETS:
-                self.json_data = dataset_response(21)
-            if service_key == ServiceKey.DATA_SERVICES:
-                self.json_data = dataservice_response(33)
-            if service_key == ServiceKey.INFO_MODELS:
-                self.json_data = info_model_response(2)
             else:
                 self.json_data = {"page": {"totalElements": 0}}
             self.status_code = status
@@ -86,38 +77,6 @@ def get_xhttp_mock(status_code, service_key: None):
 @pytest.fixture
 def mock_get_xhttp_organizations(mocker):
     mock_values = get_xhttp_mock(status_code=200, service_key=ServiceKey.ORGANIZATIONS)
-    return mocker.patch('httpx.AsyncClient.get',
-                        return_value=mock_values
-                        )
-
-
-@pytest.fixture
-def mock_get_xhttp_concepts(mocker):
-    mock_values = get_xhttp_mock(status_code=200, service_key=ServiceKey.CONCEPTS)
-    return mocker.patch('httpx.AsyncClient.get',
-                        return_value=mock_values
-                        )
-
-
-@pytest.fixture
-def mock_get_xhttp_dataservices(mocker):
-    mock_values = get_xhttp_mock(status_code=200, service_key=ServiceKey.DATA_SERVICES)
-    return mocker.patch('httpx.AsyncClient.get',
-                        return_value=mock_values
-                        )
-
-
-@pytest.fixture
-def mock_get_xhttp_datasets(mocker):
-    mock_values = get_xhttp_mock(status_code=200, service_key=ServiceKey.DATA_SETS)
-    return mocker.patch('httpx.AsyncClient.get',
-                        return_value=mock_values
-                        )
-
-
-@pytest.fixture
-def mock_get_xhttp_informationmodels(mocker):
-    mock_values = get_xhttp_mock(status_code=200, service_key=ServiceKey.INFO_MODELS)
     return mocker.patch('httpx.AsyncClient.get',
                         return_value=mock_values
                         )

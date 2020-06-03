@@ -15,7 +15,6 @@ class OrganizationCatalogs(Resource):
 
 class OrganizationCatalogWithId(Resource):
     def get(self, organization_id: str):
-        print(organization_id)
         abort(http_status_code=501, description="Not implemented")
 
 

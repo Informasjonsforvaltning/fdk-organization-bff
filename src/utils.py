@@ -1,9 +1,22 @@
+import os
+
+
 class ServiceKey:
     ORGANIZATIONS = "organization"
-    INFO_MODELS = "informationmodels"
-    DATA_SERVICES = "dataservices"
-    DATA_SETS = "datasets"
-    CONCEPTS = "concepts"
+    ELASTIC_SEARCH = "elasticsearch"
+
+
+class IndexKey:
+    CONCEPT = "concepts"
+    DATASERVICES = "dataservices"
+    DATASETS = "datasets"
+    INFORMATIONMODELS = "informationmodels"
+
+
+service_urls = {
+    ServiceKey.ORGANIZATIONS: os.getenv('ORGANIZATION_CATALOG_URL') or "http://localhost:8080/organizations",
+    ServiceKey.ELASTIC_SEARCH: f"{os.getenv('ELASTIC_HOST') or 'localhost'}:{os.getenv('ELASTIC_PORT') or 9200}"
+}
 
 
 class FetchFromServiceException(Exception):

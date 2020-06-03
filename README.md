@@ -10,10 +10,15 @@ fdk-organization-bff
 % pipenv install --dev  # install packages from Pipfile including dev
 ```
 
+### Getting es7 image with mock-data
+ //TODO
+
 #### Env variables:
 ```          
 ORGANIZATION_CATALOG_URL=http://localhost:8080/organizations
-ES_HOST=http://localhost:9200
+ES_HOST=http://localhost
+ELASTIC_TCP_PORT=9300
+ELASTIC_PORT=9200
 ```
 
 ```
@@ -49,10 +54,10 @@ options:
 ```
 
 ```
-stop-docker        #shut down containers used in contracttests
+stop-docker                 #shut down containers used in contracttests
 options:
 --clean                      #remove associated containers and networks
---remove                     #remove associated containers, networks and images   
+--remove                     #remove all containers, networks and images   
 ```
  
 ``` 
@@ -62,8 +67,7 @@ options:
 ```
 
 ```
-record_harvest_data # record mock_dat from harvesters, prerequisite: wiremock running record and playback on root url
---old                      # wether to record data from old (as opposed to new) harvesters, defaults to false 
+record_org_data 
 --env                      # which environment that should be updated (must be same as target for recordings). Defaults to production  
 ```
 

@@ -1,0 +1,3586 @@
+{
+    "took": 272,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 5648,
+            "relation": "eq"
+        },
+        "max_score": null,
+        "hits": []
+    },
+    "aggregations": {
+        "group_by_res": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+                {
+                    "key": "/STAT/972417807/974761076",
+                    "doc_count": 3294,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "concepts",
+                                "doc_count": 3245
+                            },
+                            {
+                                "key": "datasets",
+                                "doc_count": 49
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "MISSING",
+                    "doc_count": 546,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "informationmodels",
+                                "doc_count": 533
+                            },
+                            {
+                                "key": "dataservices",
+                                "doc_count": 4
+                            },
+                            {
+                                "key": "info",
+                                "doc_count": 4
+                            },
+                            {
+                                "key": "concepts",
+                                "doc_count": 3
+                            },
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/912660680/974760673",
+                    "doc_count": 251,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "concepts",
+                                "doc_count": 241
+                            },
+                            {
+                                "key": "datasets",
+                                "doc_count": 10
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/964965226",
+                    "doc_count": 193,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 193
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417858/971040238",
+                    "doc_count": 165,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 165
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/910244132",
+                    "doc_count": 96,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 53
+                            },
+                            {
+                                "key": "concepts",
+                                "doc_count": 38
+                            },
+                            {
+                                "key": "dataservices",
+                                "doc_count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417874/988983837",
+                    "doc_count": 87,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 87
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417874/981544315",
+                    "doc_count": 78,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 78
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417858/991825827",
+                    "doc_count": 54,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 37
+                            },
+                            {
+                                "key": "concepts",
+                                "doc_count": 15
+                            },
+                            {
+                                "key": "informationmodels",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/Statens vegvesen",
+                    "doc_count": 48,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 48
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/977161630/970205039",
+                    "doc_count": 44,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 44
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417866/961181399",
+                    "doc_count": 43,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "concepts",
+                                "doc_count": 41
+                            },
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/958935420",
+                    "doc_count": 28,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 28
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417882/999601391",
+                    "doc_count": 28,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 28
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417904/971032081",
+                    "doc_count": 28,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 28
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417882/971274042",
+                    "doc_count": 26,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 26
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "STAT/912660680/974760673",
+                    "doc_count": 25,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "informationmodels",
+                                "doc_count": 25
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417882/971022264",
+                    "doc_count": 23,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 23
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/910258028",
+                    "doc_count": 22,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 11
+                            },
+                            {
+                                "key": "concepts",
+                                "doc_count": 8
+                            },
+                            {
+                                "key": "dataservices",
+                                "doc_count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/Geovekst",
+                    "doc_count": 22,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 22
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/910298062",
+                    "doc_count": 21,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "concepts",
+                                "doc_count": 21
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417807/971526920",
+                    "doc_count": 21,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 21
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417874/985399077",
+                    "doc_count": 17,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 17
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/977161630/870917732",
+                    "doc_count": 16,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 16
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/872417842/970018131",
+                    "doc_count": 15,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 11
+                            },
+                            {
+                                "key": "dataservices",
+                                "doc_count": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417904/874783242",
+                    "doc_count": 15,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 15
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/983887457/889640782",
+                    "doc_count": 13,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 13
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/983887457/974761211",
+                    "doc_count": 13,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 13
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/964338531",
+                    "doc_count": 12,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 10
+                            },
+                            {
+                                "key": "concepts",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/912660680/971203420",
+                    "doc_count": 12,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 12
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "PRIVAT/910244132",
+                    "doc_count": 12,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "informationmodels",
+                                "doc_count": 12
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/940039541",
+                    "doc_count": 11,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 11
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/872417842/986339523",
+                    "doc_count": 11,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 11
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/912660680/970188290",
+                    "doc_count": 10,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 10
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/988913898",
+                    "doc_count": 9,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 9
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417831/974760983",
+                    "doc_count": 9,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 9
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/964978573",
+                    "doc_count": 8,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 8
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/985198292",
+                    "doc_count": 8,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 8
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417858",
+                    "doc_count": 8,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 8
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417882/919666102",
+                    "doc_count": 8,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 8
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417882/974760819",
+                    "doc_count": 8,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 8
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/977161630",
+                    "doc_count": 7,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 7
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/872417842/974788985",
+                    "doc_count": 6,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 6
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/912660680/971349077",
+                    "doc_count": 6,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 6
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417807",
+                    "doc_count": 6,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 6
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/FYLKE/941388841",
+                    "doc_count": 5,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/950037687",
+                    "doc_count": 5,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417858/974446871",
+                    "doc_count": 5,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417858/974763907",
+                    "doc_count": 5,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417920/971277882",
+                    "doc_count": 5,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/964968063",
+                    "doc_count": 4,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/872417842/919477822",
+                    "doc_count": 4,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/872417842/974767880",
+                    "doc_count": 4,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417823/975950662",
+                    "doc_count": 4,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417866/971527412",
+                    "doc_count": 4,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/840029212",
+                    "doc_count": 3,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/917082308",
+                    "doc_count": 3,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/983887406/983744516",
+                    "doc_count": 3,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111051",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111290",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/Geonorge",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/Kommunene",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/936401651",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/942110464",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/942953119",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/944020977",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/964967725",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/964968896",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/914749360",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/872417842/874789542",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/872417842/987879696",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/912660680/886028482",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417858/967311014",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417866",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417866/982391490",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/983887406/867668292",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/983887406/915933149",
+                    "doc_count": 2,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111002",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111004",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111006",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111007",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111008",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111009",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111012",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111014",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111016",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111017",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111018",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111021",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111023",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111024",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111027",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/555111052",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/568843537",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/911527170",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/916285515",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/973633449",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/ANNET/Fylkesmannsembetene",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/FYLKE/938626367",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/FYLKE/958381492",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/840894312",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/842566142",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/844458312",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/934945514",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/940101808",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/942110286",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/945578564",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/963923511",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/964948798",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/964979367",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/KOMMUNE/972417971",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/816793432",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/817244742",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/832554332",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/837884942",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/837886252",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/837889812",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/837895502",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/837897912",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/837900212",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/837902622",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/911986884",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/914864445",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/915287700",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/915691161",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/916012683",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/917135428",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/917422575",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/920058817",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/920426530",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937884117",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937884494",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937884672",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937885199",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937885288",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937885377",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937885644",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937885822",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937885911",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937886160",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937886705",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937887043",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937887787",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937888015",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937888104",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937888570",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937888759",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937888937",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937889097",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937889186",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937889275",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937889631",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937890540",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937890729",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937891245",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937891334",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937891423",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937891512",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937891601",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937893299",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937893655",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937893833",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937893922",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937894082",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937894171",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937894260",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937894538",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937894627",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937894716",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937894805",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937895054",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937895321",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937895976",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937896581",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937896670",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937896859",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937897286",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937897375",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937897464",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937898614",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937899319",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937899408",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937899785",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937899963",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937900031",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937900775",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937900953",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937901003",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937901291",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937901569",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937901836",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937901925",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937902085",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937902174",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937902263",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937902352",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937902441",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937902719",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937903146",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937903235",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937903502",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937903979",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937904029",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937904673",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/937905378",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/944521836",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/946670081",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/947278770",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/952706365",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/953299216",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/955008863",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/956548888",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/971036028",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/971171324",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/971273003",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/974442167",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/974652366",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/976390512",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/979469241",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/980374181",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/982719445",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/984661185",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/984851006",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/985321884",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/985750378",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/988257133",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/989480731",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/990323429",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/991455671",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/991467645",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/991609407",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/991853995",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/993821837",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/994686011",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/PRIVAT/998997801",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "dataservices",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/872417842/970141669",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/966056258",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/971524960",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417793",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417793/986128433",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417807/986252932",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417823/986105174",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417831/971456523",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417858/916132727",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417858/942114184",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/972417882",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/983609155",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/983887406/974761122",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "/STAT/983887406/983544622",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "datasets",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "PRIVAT/910258028",
+                    "doc_count": 1,
+                    "docs_pr_publisher": {
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0,
+                        "buckets": [
+                            {
+                                "key": "informationmodels",
+                                "doc_count": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

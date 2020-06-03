@@ -18,6 +18,7 @@ gunicorn = "*"
 requests = "*"
 httpx = "*"
 pytest-asyncio = "*"
+elasticsearch = "*"
 
 [requires]
 python_version = "3.8"
