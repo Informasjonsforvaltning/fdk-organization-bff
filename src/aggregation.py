@@ -1,6 +1,4 @@
-import asyncio
-
-from src.responses import OrganizationCatalogResponse, OrganizationCatalogListResponse
+from src.responses import OrganizationCatalogListResponse
 from src.service_requests import get_organizations, get_organizations_fdk_content
 from src.utils import FetchFromServiceException
 

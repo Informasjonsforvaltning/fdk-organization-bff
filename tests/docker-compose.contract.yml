@@ -25,7 +25,8 @@ services:
         - servicesmock
         - elasticsearch
       environment:
-        - ORGANIZATION_CATALOG_URL=servicesmock/organizations
+        - HOST_PORT=8000
+        - ORGANIZATION_CATALOG_URL=http://servicesmock:8080/organizations
         - ELASTIC_HOST=elasticsearch
         - ELASTIC_PORT=9200
         - ELASTIC_TCP_PORT=9300

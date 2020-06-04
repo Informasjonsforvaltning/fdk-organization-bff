@@ -50,8 +50,7 @@ def is_ready():
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     availability_requests = asyncio.gather(
-        check_available(ServiceKey.ORGANIZATIONS, header={"Accept": "application/json"}),
-        check_available(ServiceKey.ELASTIC_SEARCH)
+        check_available(ServiceKey.ORGANIZATIONS, header={"Accept": "application/json"})
     )
     org = loop.run_until_complete(availability_requests)
 
@@ -59,7 +58,6 @@ def is_ready():
 
         return connection_error_msg(serviceKey=ServiceKey.ORGANIZATIONS)
     if not es_client.ping():
-        breakpoint()
         return connection_error_msg(serviceKey=ServiceKey.ELASTIC_SEARCH)
     response = {
         "status": 200,

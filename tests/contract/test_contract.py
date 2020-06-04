@@ -4,7 +4,7 @@ import requests
 service_url = "http://localhost:8000"
 org_catalog_url = f"{service_url}/organizationcatalogs"
 # update if change in mockdata
-expected_size = 8
+expected_size = 272
 
 
 class TestSearchAll:
