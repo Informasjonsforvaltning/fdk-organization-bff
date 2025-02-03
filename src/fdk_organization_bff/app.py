@@ -1,6 +1,7 @@
 """Module for starting an aiohttp API."""
 
 import logging
+import os
 
 from aiohttp import web
 from aiohttp_middlewares import cors_middleware
@@ -32,7 +33,21 @@ def setup_routes(app: web.Application) -> None:
 
 async def create_app() -> web.Application:
     """Create aiohttp application."""
-    app = web.Application(middlewares=[cors_middleware(allow_all=True)])
+    origins = os.getenv("CORS_ORIGIN_PATTERNS").split(",")
+    origins = [origin.strip() for origin in origins]
+
+    allow_all = "*" in origins
+
+    app = web.Application(middlewares=[
+        cors_middleware(
+            allow_all=allow_all,
+            origins=None if allow_all else origins,
+            allow_methods=["GET"],
+            allow_headers=["*"],
+        )
+    ])
+
     logging.basicConfig(level=logging.INFO)
     setup_routes(app)
+
     return app

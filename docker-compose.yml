@@ -13,6 +13,7 @@ services:
       - FDK_PORTAL_URI=http://wiremock:8080
       - FDK_METADATA_QUALITY_URI=http://wiremock:8080
       - FDK_SPARQL_URI=http://wiremock:8080/sparql
+      - CORS_ORIGIN_PATTERNS=*
     depends_on:
       - wiremock
 
