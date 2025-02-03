@@ -38,14 +38,16 @@ async def create_app() -> web.Application:
 
     allow_all = "*" in origins
 
-    app = web.Application(middlewares=[
-        cors_middleware(
-            allow_all=allow_all,
-            origins=None if allow_all else origins,
-            allow_methods=["GET"],
-            allow_headers=["*"],
-        )
-    ])
+    app = web.Application(
+        middlewares=[
+            cors_middleware(
+                allow_all=allow_all,
+                origins=None if allow_all else origins,
+                allow_methods=["GET"],
+                allow_headers=["*"],
+            )
+        ]
+    )
 
     logging.basicConfig(level=logging.INFO)
     setup_routes(app)
