@@ -39,6 +39,7 @@ def unit_tests(session: Session) -> None:
             "FDK_PORTAL_URI": "http://localhost:8000",
             "FDK_METADATA_QUALITY_URI": "http://localhost:8000",
             "FDK_SPARQL_URI": "http://localhost:8000/sparql",
+            "CORS_ORIGIN_PATTERNS": "*"
         },
     )
 
@@ -68,6 +69,7 @@ def integration_tests(session: Session) -> None:
             "FDK_PORTAL_URI": "http://localhost:8000",
             "FDK_METADATA_QUALITY_URI": "http://localhost:8000",
             "FDK_SPARQL_URI": "http://localhost:8000/sparql",
+            "CORS_ORIGIN_PATTERNS": "*"
         },
     )
 
@@ -98,6 +100,7 @@ def tests(session: Session) -> None:
             "FDK_PORTAL_URI": "http://localhost:8000",
             "FDK_METADATA_QUALITY_URI": "http://localhost:8000",
             "FDK_SPARQL_URI": "http://localhost:8000/sparql",
+            "CORS_ORIGIN_PATTERNS": "*"
         },
     )
 

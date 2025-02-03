@@ -33,7 +33,7 @@ def setup_routes(app: web.Application) -> None:
 
 async def create_app() -> web.Application:
     """Create aiohttp application."""
-    origins = os.getenv("CORS_ORIGIN_PATTERNS", "*").split(",")
+    origins = os.getenv("CORS_ORIGIN_PATTERNS").split(",")
     origins = [origin.strip() for origin in origins]
 
     allow_all = "*" in origins
