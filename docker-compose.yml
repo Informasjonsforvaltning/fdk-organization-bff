@@ -3,7 +3,7 @@ services:
 
   fdk-organization-bff:
     build: .
-    image: eu.gcr.io/digdir-fdk-infra/fdk-organization-bff:test
+    image: ghcr.io/informasjonsforvaltning/fdk-organization-bff:test
     ports:
       - "8080:8080"
     environment:
