@@ -16,8 +16,6 @@ jobs:
       python_version: '3.9'
       python_architecture: x64
       environment: staging
-      cluster: digdir-fdk-dev
-      nox_image: True
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
