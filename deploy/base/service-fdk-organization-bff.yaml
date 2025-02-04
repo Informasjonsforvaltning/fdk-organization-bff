@@ -4,12 +4,10 @@ kind: Service
 metadata:
   labels:
     fdk.service: fdk-organization-bff
-    app: fdk-organization-bff
   name: fdk-organization-bff
 spec:
   selector:
     fdk.service: fdk-organization-bff
-    app: fdk-organization-bff
   ports:
   - name: http
     protocol: TCP
