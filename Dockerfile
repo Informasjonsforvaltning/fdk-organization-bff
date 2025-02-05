@@ -16,4 +16,4 @@ ADD src /app/src
 
 EXPOSE 8080
 
-CMD gunicorn --chdir src "fdk_organization_bff:create_app" --config=src/fdk_organization_bff/gunicorn_config.py 
+CMD gunicorn --chdir src "fdk_organization_bff:create_app" --config=src/fdk_organization_bff/gunicorn_config.py --worker-class aiohttp.GunicornWebWorker
