@@ -211,9 +211,12 @@ async def fetch_org_dataset_catalog_scores(
     """Fetch rating for organization's dataset catalog from fdk-metadata-quality-service."""
     url = f"{Config.metadata_uri()}/api/scores"
 
-    scores = await fetch_json_data_with_post(url, {"datasets": uris}, session)
-
-    if scores and isinstance(scores, Dict):
-        return scores
-    else:
+    if len(uris) > 500:
         return dict()
+    else:
+        scores = await fetch_json_data_with_post(url, {"datasets": uris}, session)
+
+        if scores and isinstance(scores, Dict):
+            return scores
+        else:
+            return dict()
