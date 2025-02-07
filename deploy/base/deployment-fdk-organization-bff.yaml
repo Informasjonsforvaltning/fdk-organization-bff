@@ -1,0 +1,48 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    fdk.service: fdk-organization-bff
+  name: fdk-organization-bff
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      fdk.service: fdk-organization-bff
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        fdk.service: fdk-organization-bff
+    spec:
+      containers:
+        - name: fdk-organization-bff
+          image: fdk-organization-bff
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /ping
+              port: 8080
+            initialDelaySeconds: 20
+            periodSeconds: 30
+            successThreshold: 1
+            failureThreshold: 5
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 8080
+            initialDelaySeconds: 20
+            periodSeconds: 30
+            successThreshold: 1
+            failureThreshold: 5
+          resources:
+            requests:
+              cpu: 10m
+              memory: 150Mi
+            limits:
+              memory: 150Mi
+      restartPolicy: Always
