@@ -32,7 +32,9 @@ async def fetch_json_data(
     url: str, params: Optional[Dict[str, str]], session: ClientSession
 ) -> Optional[Union[Dict, List]]:
     """Fetch json data from url."""
-    async with session.get(url_with_params(url, params)) as response:
+    async with session.get(
+        url_with_params(url, params), headers={"Accept": "application/json"}
+    ) as response:
         return await response.json() if response.status == 200 else None
 
 
@@ -40,7 +42,9 @@ async def fetch_json_data_with_post(
     url: str, data: Dict, session: ClientSession
 ) -> Optional[Union[Dict, List]]:
     """Fetch json data from url."""
-    async with session.post(url, json=data) as response:
+    async with session.post(
+        url, json=data, headers={"Accept": "application/json"}
+    ) as response:
         return await response.json() if response.status == 200 else None
 
 
