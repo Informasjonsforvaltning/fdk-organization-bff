@@ -29,17 +29,22 @@ git clone https://github.com/Informasjonsforvaltning/fdk-organization-bff.git
 cd fdk-organization-bff
 ```
 
+Install packages
+
+```sh
+poetry install
+```
+
 Start the application with CLI
 
-```
-poetry install
+```sh
 poetry shell
 gunicorn --chdir src "fdk_organization_bff:create_app" --config=src/fdk_organization_bff/gunicorn_config.py --worker-class aiohttp.GunicornWebWorker
 ```
 
 or start the application with Docker Compose
 
-```
+```sh
 docker compose up -d
 ```
 
@@ -53,19 +58,19 @@ The API documentation is available at ```fdk-organization-bff.yaml```.
 
 Run default sessions:
 
-```
+```sh
 nox
 ```
 
 Run specific session:
 
-```
+```sh
 nox -s black
 nox -s unit_tests
 ```
 
 #### outside nox sessions
 
-```
+```sh
 poetry run pytest
 ```
