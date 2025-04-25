@@ -1,63 +1,76 @@
-fdk-organization-bff
----------------------
-Backend-for-frontend service that provides content for fdk portal's organization pages. 
+# FDK Organization BFF
 
-## Develop and run locally
-### Requirements
+This application provides an API for the organization pages on [data.norge.no](https://data.norge.no/organizations).
+
+For a broader understanding of the system’s context, refer to
+the [architecture documentation](https://github.com/Informasjonsforvaltning/architecture-documentation) wiki. For more
+specific context on this application, see the **Portal** subsystem section.
+
+## Getting Started
+
+These instructions will give you a copy of the project up and running on your local machine for development and testing
+purposes.
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Python
 - [poetry](https://python-poetry.org/)
 - [nox](https://nox.thea.codes/en/stable/)
 - [nox-poetry](https://pypi.org/project/nox-poetry/)
 
-### Install software:
-```
-% pip install poetry==1.7.1
-% pip install nox==2023.4.22
-% pip install nox-poetry==1.0.3
-% poetry install
+### Running locally
+
+Clone the repository
+
+```sh
+git clone https://github.com/Informasjonsforvaltning/fdk-organization-bff.git
+cd fdk-organization-bff
 ```
 
-#### Env variables:
-```
-ORGANIZATION_CATALOG_URI
-DATA_BRREG_URI
-FDK_PORTAL_URI
-FDK_METADATA_QUALITY_URI
-```
-### Running the application 
-#### in commandline
-```
-% poetry shell
-% gunicorn --chdir src "fdk_organization_bff:create_app" --config=src/fdk_organization_bff/gunicorn_config.py --worker-class aiohttp.GunicornWebWorker
+Install packages
+
+```sh
+poetry install
 ```
 
-#### with docker-compose
-```
-% docker-compose up -d --build
+Start the application with CLI
+
+```sh
+poetry shell
+gunicorn --chdir src "fdk_organization_bff:create_app" --config=src/fdk_organization_bff/gunicorn_config.py --worker-class aiohttp.GunicornWebWorker
 ```
 
-## Testing
+or start the application with Docker Compose
+
+```sh
+docker compose up -d
+```
+
+### API Documentation (OpenAPI)
+
+The API documentation is available at ```fdk-organization-bff.yaml```.
+
 ### Running tests
+
 #### with nox sessions
+
 Run default sessions:
-```
-% nox
+
+```sh
+nox
 ```
 
 Run specific session:
-```
-% nox -s black
-% nox -s unit_tests
+
+```sh
+nox -s black
+nox -s unit_tests
 ```
 
 #### outside nox sessions
-```
-% poetry run pytest
-```
 
-## Updating mock data
-
-1. Set API_URL env variable to `http://0.0.0.0:8000`
-2. Start wiremock with `docker-compose up`
-2. Go to `http://0.0.0.0:8000/__admin/recorder/` and start recording with target url 
-3. Send request to capture
-4. Stop recording
+```sh
+poetry run pytest
+```

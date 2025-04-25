@@ -141,8 +141,9 @@ dmypy.json
 cython_debug/
 
 .idea/
-src/.DS_Store
+
 
 .env
 requirements.txt
 .python-version
+.DS_Store
