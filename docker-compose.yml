@@ -1,11 +1,10 @@
-version: '3'
+version: "3"
 services:
-
   fdk-organization-bff:
     build: .
     image: ghcr.io/informasjonsforvaltning/fdk-organization-bff:test
     ports:
-      - "8080:8080"
+      - "9080:8080"
     environment:
       - ORGANIZATION_CATALOG_URI=http://wiremock:8080
       - DATA_BRREG_URI=http://wiremock:8080
@@ -20,6 +19,6 @@ services:
   wiremock:
     image: rodolpheche/wiremock
     ports:
-      - "8000:8080"
+      - "9081:8080"
     volumes:
       - ./mock_mappings/mappings:/home/wiremock/mappings

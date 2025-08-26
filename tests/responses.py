@@ -18,7 +18,7 @@ ramsund = """{
   },
   "datasets": {
     "totalCount": 71,
-    "newCount": 4,
+    "newCount": 0,
     "authoritativeCount": 10,
     "openCount": 15,
     "quality": {
@@ -28,7 +28,7 @@ ramsund = """{
   },
   "dataservices": {
     "totalCount": 20,
-    "newCount": 1
+    "newCount": 0
   },
   "concepts": {
     "totalCount": 0,
@@ -58,14 +58,14 @@ ramsund_with_no_quality = """{
   },
   "datasets": {
     "totalCount": 71,
-    "newCount": 4,
+    "newCount": 0,
     "authoritativeCount": 10,
     "openCount": 15,
     "quality": null
   },
   "dataservices": {
     "totalCount": 20,
-    "newCount": 1
+    "newCount": 0
   },
   "concepts": {
     "totalCount": 0,

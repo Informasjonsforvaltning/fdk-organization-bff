@@ -1,11 +1,12 @@
 name: Deploy to production & demo
-
+permissions:
+  contents: read
+  packages: write
 on:
   push:
     branches:
       - main
   workflow_dispatch:
-
 
 jobs:
   build:
@@ -13,7 +14,7 @@ jobs:
     uses: Informasjonsforvaltning/workflows/.github/workflows/build-push-nox.yaml@main
     with:
       app_name: fdk-organization-bff
-      python_version: '3.9'
+      python_version: "3.12"
       python_architecture: x64
       environment: prod
     secrets:
@@ -34,7 +35,7 @@ jobs:
 
   deploy-demo:
     name: Deploy to demo if prod-deploy is successful
-    needs: [ build, deploy-prod ]
+    needs: [build, deploy-prod]
     uses: Informasjonsforvaltning/workflows/.github/workflows/kustomize-deploy.yaml@main
     with:
       app_name: fdk-organization-bff

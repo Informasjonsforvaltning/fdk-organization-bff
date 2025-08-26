@@ -1,8 +1,10 @@
 name: Deploy to staging
-
+permissions:
+  contents: read
+  packages: write
 on:
   pull_request:
-    types: [ ready_for_review, opened, reopened, synchronize ]
+    types: [ready_for_review, opened, reopened, synchronize]
     branches:
       - main
 
@@ -13,7 +15,7 @@ jobs:
     uses: Informasjonsforvaltning/workflows/.github/workflows/build-push-nox.yaml@main
     with:
       app_name: fdk-organization-bff
-      python_version: '3.9'
+      python_version: "3.12"
       python_architecture: x64
       environment: staging
     secrets:

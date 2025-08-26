@@ -40,6 +40,11 @@ def dataset_is_authoritative(dataset: Dict) -> bool:
     return False
 
 
+def get_today() -> datetime.date:
+    """Get today's date. This function can be easily mocked in tests."""
+    return datetime.date.today()
+
+
 def resource_is_new(resource: Dict) -> bool:
     """Check if resource was first published within the last 7 days."""
     issued = resource.get("issued")
@@ -49,7 +54,7 @@ def resource_is_new(resource: Dict) -> bool:
             issued_date = datetime.datetime.strptime(
                 issued["value"][0:10], date_format
             ).date()
-            seven_days_ago = datetime.date.today() - datetime.timedelta(days=7)
+            seven_days_ago = get_today() - datetime.timedelta(days=7)
             return issued_date >= seven_days_ago
         except ValueError:
             logging.error(f"{traceback.format_exc()}: failed to parse issued date")
