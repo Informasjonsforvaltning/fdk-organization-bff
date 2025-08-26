@@ -16,7 +16,7 @@ nox.options.sessions = (
 )
 
 
-@nox_poetry.session(python=["3.9"])
+@nox_poetry.session(python=["3.12"])
 def unit_tests(session: Session) -> None:
     """Run the unit test suite."""
     args = session.posargs
@@ -25,7 +25,7 @@ def unit_tests(session: Session) -> None:
         "pytest",
         "requests-mock",
         "pytest-mock",
-        "asynctest",
+        "pytest-asyncio",
     )
     session.run(
         "pytest",
@@ -44,7 +44,7 @@ def unit_tests(session: Session) -> None:
     )
 
 
-@nox_poetry.session(python=["3.9"])
+@nox_poetry.session(python=["3.12"])
 def integration_tests(session: Session) -> None:
     """Run the integration test suite."""
     args = session.posargs
@@ -55,7 +55,6 @@ def integration_tests(session: Session) -> None:
         "requests-mock",
         "pytest-mock",
         "pytest-aiohttp",
-        "asynctest",
     )
     session.run(
         "pytest",
@@ -74,9 +73,9 @@ def integration_tests(session: Session) -> None:
     )
 
 
-@nox_poetry.session(python=["3.9"])
+@nox_poetry.session(python=["3.12"])
 def tests(session: Session) -> None:
-    """Run the integration test suite."""
+    """Run the coverage unit-test suite."""
     args = session.posargs or ["--cov"]
     session.install(
         ".",
@@ -87,7 +86,6 @@ def tests(session: Session) -> None:
         "requests-mock",
         "pytest-mock",
         "pytest-aiohttp",
-        "asynctest",
     )
     session.run(
         "pytest",
@@ -105,12 +103,12 @@ def tests(session: Session) -> None:
     )
 
 
-@nox_poetry.session(python=["3.9"])
+@nox_poetry.session(python=["3.12"])
 def contract_tests(session: Session) -> None:
     """Run the contract test suite."""
     args = session.posargs
     session.install(
-        ".", "pytest", "pytest-docker", "asynctest", "requests_mock", "pytest_mock"
+        ".", "pytest", "pytest-docker", "requests_mock", "pytest_mock", "pytest-asyncio"
     )
     session.run(
         "pytest",
@@ -120,7 +118,7 @@ def contract_tests(session: Session) -> None:
     )
 
 
-@nox_poetry.session(python=["3.9"])
+@nox_poetry.session(python=["3.12"])
 def black(session: Session) -> None:
     """Run black code formatter."""
     args = session.posargs or locations
@@ -128,7 +126,7 @@ def black(session: Session) -> None:
     session.run("black", *args)
 
 
-@nox_poetry.session(python=["3.9"])
+@nox_poetry.session(python=["3.12"])
 def lint(session: Session) -> None:
     """Lint using flake8."""
     args = session.posargs or locations
@@ -145,15 +143,15 @@ def lint(session: Session) -> None:
     session.run("flake8", *args)
 
 
-@nox_poetry.session(python=["3.9"])
+@nox_poetry.session(python=["3.12"])
 def mypy(session: Session) -> None:
     """Type-check using mypy."""
     args = session.posargs or locations
-    session.install("mypy")
+    session.install("mypy", "pytest-asyncio")
     session.run("mypy", *args)
 
 
-@nox_poetry.session(python=["3.9"])
+@nox_poetry.session(python=["3.12"])
 def coverage(session: Session) -> None:
     """Upload coverage data."""
     session.install("coverage[toml]")

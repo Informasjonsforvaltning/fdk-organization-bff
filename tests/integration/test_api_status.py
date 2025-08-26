@@ -1,12 +1,13 @@
 """Integration test cases for ping & ready routes."""
 
-from aiohttp.test_utils import TestClient
+from typing import Any
+
 import pytest
 
 
 @pytest.mark.integration
 @pytest.mark.asyncio
-async def test_ping(client: TestClient) -> None:
+async def test_ping(client: Any) -> None:
     """Should return OK."""
     response = await client.get("/ping")
     response_content = await response.content.read()
@@ -17,7 +18,7 @@ async def test_ping(client: TestClient) -> None:
 
 @pytest.mark.integration
 @pytest.mark.asyncio
-async def test_ready(client: TestClient) -> None:
+async def test_ready(client: Any) -> None:
     """Should return OK."""
     response = await client.get("/ready")
     response_content = await response.content.read()

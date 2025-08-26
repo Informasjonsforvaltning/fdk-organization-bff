@@ -1,7 +1,5 @@
 """Conftest module."""
 
-from asyncio import AbstractEventLoop
-import datetime
 import os
 import time
 from typing import Any
@@ -9,16 +7,14 @@ from unittest.mock import Mock
 
 from dotenv import load_dotenv
 import pytest
-from pytest_mock import MockFixture
+import pytest_asyncio
+import pytest_mock
 import requests
 from requests.exceptions import ConnectionError
-
-from fdk_organization_bff import create_app
 
 
 load_dotenv()
 HOST_PORT = int(os.environ.get("HOST_PORT", "8080"))
-MOCKED_DATE = datetime.date(2021, 4, 10)
 
 
 def is_responsive(url: Any) -> Any:
@@ -51,25 +47,19 @@ def docker_compose_file(pytestconfig: Any) -> Any:
     return os.path.join(str(pytestconfig.rootdir), "./", "docker-compose.yml")
 
 
-@pytest.mark.integration
-@pytest.fixture(scope="function")
-def client(loop: AbstractEventLoop, aiohttp_client: Any) -> Any:
+@pytest_asyncio.fixture(scope="function")
+async def client(docker_service: str) -> Any:
     """Return an aiohttp client for testing."""
-    return loop.run_until_complete(
-        aiohttp_client(loop.run_until_complete(create_app()))
-    )
+    # Use the Docker service URL to create a client that connects to the mocked services
+    from aiohttp import ClientSession
+
+    session = ClientSession(base_url=docker_service)
+    yield session
+    await session.close()
 
 
 @pytest.fixture
-def mock_datetime(mocker: MockFixture) -> Mock:
-    """Mock datetime."""
-    mock = mocker.patch("datetime.date")
-    mock.today.return_value = MOCKED_DATE
-    return mock
-
-
-@pytest.fixture
-def mock_fetch_org_dataset_catalog_scores(mocker: MockFixture) -> Mock:
+def mock_fetch_org_dataset_catalog_scores(mocker: pytest_mock.MockFixture) -> Mock:
     """Mock fetch_org_dataset_catalog_scores."""
     mock = mocker.patch(
         "fdk_organization_bff.service.org_catalog_service.fetch_org_dataset_catalog_scores"

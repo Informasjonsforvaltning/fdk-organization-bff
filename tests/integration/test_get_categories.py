@@ -1,13 +1,14 @@
 """Integration test cases for organization categories."""
 
-from aiohttp.test_utils import TestClient
+from typing import Any
+
 import pytest
 
 
 @pytest.mark.integration
 @pytest.mark.docker
 @pytest.mark.asyncio
-async def test_state_categories(client: TestClient, docker_service: str) -> None:
+async def test_state_categories(client: Any, docker_service: str) -> None:
     """Should return the state categories response without empty orgs."""
     response = await client.get("/organizationcategories/state?includeEmpty=false")
     response_json = await response.json()
@@ -21,9 +22,7 @@ async def test_state_categories(client: TestClient, docker_service: str) -> None
 @pytest.mark.integration
 @pytest.mark.docker
 @pytest.mark.asyncio
-async def test_state_categories_include_empty(
-    client: TestClient, docker_service: str
-) -> None:
+async def test_state_categories_include_empty(client: Any, docker_service: str) -> None:
     """Should return the state categories response with empty orgs."""
     response = await client.get("/organizationcategories/state?includeEmpty=true")
     response_json = await response.json()
@@ -37,7 +36,7 @@ async def test_state_categories_include_empty(
 @pytest.mark.integration
 @pytest.mark.docker
 @pytest.mark.asyncio
-async def test_municipality_categories(client: TestClient, docker_service: str) -> None:
+async def test_municipality_categories(client: Any, docker_service: str) -> None:
     """Should return the municipality categories response without empty orgs."""
     response = await client.get(
         "/organizationcategories/municipality?includeEmpty=false"
@@ -54,7 +53,7 @@ async def test_municipality_categories(client: TestClient, docker_service: str) 
 @pytest.mark.docker
 @pytest.mark.asyncio
 async def test_municipality_categories_include_empty(
-    client: TestClient, docker_service: str
+    client: Any, docker_service: str
 ) -> None:
     """Should return the municipality categories response with empty orgs."""
     response = await client.get(

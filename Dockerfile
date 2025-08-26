@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.12-slim
 
 ENV TZ=Europe/Oslo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
@@ -16,4 +16,4 @@ ADD src /app/src
 
 EXPOSE 8080
 
-CMD gunicorn --chdir src "fdk_organization_bff:create_app" --config=src/fdk_organization_bff/gunicorn_config.py --worker-class aiohttp.GunicornWebWorker
+CMD ["gunicorn", "--chdir", "src", "fdk_organization_bff:create_app", "--config=src/fdk_organization_bff/gunicorn_config.py", "--worker-class", "aiohttp.GunicornWebWorker"]
