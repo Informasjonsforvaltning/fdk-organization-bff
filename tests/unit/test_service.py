@@ -89,7 +89,7 @@ async def test_get_organization_catalogs_empty_response(
         mock_fetch_orgs.return_value = {}
 
         result = await org_catalog_service.get_organization_catalogs(
-            FilterEnum.NONE, None
+            FilterEnum.NONE, "true"
         )
 
         assert result is not None
