@@ -2,7 +2,7 @@
   "id" : "f3c0e9ca-934e-4ea1-bc1d-4e496da56b54",
   "name" : "",
   "request" : {
-    "url" : "/sparql?query=%0A++++++++PREFIX+dct:+%3Chttp://purl.org/dc/terms/%3E%0A++++++++PREFIX+dcat:+%3Chttp://www.w3.org/ns/dcat%23%3E%0A++++++++PREFIX+foaf:+%3Chttp://xmlns.com/foaf/0.1/%3E%0A++++++++PREFIX+skos:+%3Chttp://www.w3.org/2004/02/skos/core%23%3E%0A++++++++SELECT+DISTINCT+?concept+?issued%0A++++++++WHERE+%7B%7B%0A++++++++++++?concept+a+skos:Concept+.%0A++++++++++++?record+foaf:primaryTopic+?concept+.%0A++++++++++++?record+a+dcat:CatalogRecord+.%0A++++++++++++?record+dct:issued+?issued+.%0A++++++++++++?concept+dct:publisher+?publisher+.%0A++++++++++++?publisher+dct:identifier+%22974767880%22+.%0A++++++++%7D%7D%0A++++",
+    "url" : "/sparql?query=%0A++++++++PREFIX+dct:+%3Chttp://purl.org/dc/terms/%3E%0A++++++++PREFIX+dcat:+%3Chttp://www.w3.org/ns/dcat%23%3E%0A++++++++PREFIX+foaf:+%3Chttp://xmlns.com/foaf/0.1/%3E%0A++++++++PREFIX+skos:+%3Chttp://www.w3.org/2004/02/skos/core%23%3E%0A++++++++SELECT+DISTINCT+?concept+?issued%0A++++++++WHERE+%7B+GRAPH+%3Fg+%7B%0A++++++++++++?concept+a+skos:Concept+.%0A++++++++++++?record+foaf:primaryTopic+?concept+.%0A++++++++++++?record+a+dcat:CatalogRecord+.%0A++++++++++++?record+dct:issued+?issued+.%0A++++++++++++?concept+dct:publisher+?publisher+.%0A++++++++++++?publisher+dct:identifier+%22974767880%22+.%0A++++++++%7D%7D%0A++++",
     "method" : "GET"
   },
   "response" : {

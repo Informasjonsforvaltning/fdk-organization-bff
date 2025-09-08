@@ -13,7 +13,7 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX fdk: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-reasoning-service/main/src/main/resources/ontology/fdk.owl#>
 
 SELECT DISTINCT ?dataset ?issued ?isAuthoritative ?isOpenData
-WHERE {{
+WHERE { GRAPH ?g {
     ?dataset a dcat:Dataset .
     ?record foaf:primaryTopic ?dataset .
     ?record a dcat:CatalogRecord .
@@ -38,7 +38,7 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX fdk: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-reasoning-service/main/src/main/resources/ontology/fdk.owl#>
 
 SELECT DISTINCT ?dataset ?issued ?isAuthoritative ?isOpenData
-WHERE {{
+WHERE { GRAPH ?g {
     ?dataset a dcat:Dataset .
     ?dataset fdk:isRelatedToTransportportal ?isNAP .
     FILTER (STR(?isNAP) = "true")
@@ -62,7 +62,7 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 SELECT ?organizationNumber (COUNT(DISTINCT ?dataset) AS ?count)
-WHERE {{
+WHERE { GRAPH ?g {
     ?dataset a dcat:Dataset .
     ?record foaf:primaryTopic ?dataset .
     ?record a dcat:CatalogRecord .
@@ -81,7 +81,7 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX fdk: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-reasoning-service/main/src/main/resources/ontology/fdk.owl#>
 
 SELECT ?organizationNumber (COUNT(DISTINCT ?dataset) AS ?count)
-WHERE {{
+WHERE { GRAPH ?g {
     ?dataset a dcat:Dataset .
     ?record foaf:primaryTopic ?dataset .
     ?record a dcat:CatalogRecord .

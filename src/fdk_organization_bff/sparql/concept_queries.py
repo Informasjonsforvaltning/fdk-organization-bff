@@ -11,7 +11,7 @@ def build_concepts_by_publisher_query() -> str:
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         SELECT ?organizationNumber (COUNT(DISTINCT ?concept) AS ?count)
-        WHERE {{
+        WHERE { GRAPH ?g {
             ?concept a skos:Concept .
             ?record foaf:primaryTopic ?concept .
             ?record a dcat:CatalogRecord .
@@ -31,7 +31,7 @@ def build_org_concepts_query(organization_id: str) -> str:
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         SELECT DISTINCT ?concept ?issued
-        WHERE {{
+        WHERE { GRAPH ?g {
             ?concept a skos:Concept .
             ?record foaf:primaryTopic ?concept .
             ?record a dcat:CatalogRecord .

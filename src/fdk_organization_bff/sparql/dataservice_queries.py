@@ -10,7 +10,7 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 SELECT ?organizationNumber (COUNT(DISTINCT ?service) AS ?count)
-WHERE {{
+WHERE { GRAPH ?g {
     ?service a dcat:DataService .
     ?record foaf:primaryTopic ?service .
     ?record a dcat:CatalogRecord .
@@ -29,7 +29,7 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 
 SELECT DISTINCT ?service ?issued
-WHERE {{
+WHERE { GRAPH ?g {
     ?service a dcat:DataService .
     ?record foaf:primaryTopic ?service .
     ?record a dcat:CatalogRecord .

@@ -11,7 +11,7 @@ def build_informationmodels_by_publisher_query() -> str:
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
         PREFIX modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#>
         SELECT ?organizationNumber (COUNT(DISTINCT ?informationmodel) AS ?count)
-        WHERE {{
+        WHERE { GRAPH ?g {
             ?informationmodel a modelldcatno:InformationModel .
             ?record foaf:primaryTopic ?informationmodel .
             ?record a dcat:CatalogRecord .
@@ -31,7 +31,7 @@ def build_org_informationmodels_query(organization_id: str) -> str:
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
         PREFIX modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#>
         SELECT DISTINCT ?informationmodel ?issued
-        WHERE {{
+        WHERE { GRAPH ?g {
             ?informationmodel a modelldcatno:InformationModel .
             ?record foaf:primaryTopic ?informationmodel .
             ?record a dcat:CatalogRecord .
