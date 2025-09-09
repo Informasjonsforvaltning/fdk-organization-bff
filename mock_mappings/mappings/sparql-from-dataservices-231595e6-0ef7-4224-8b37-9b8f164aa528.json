@@ -2,7 +2,7 @@
   "id" : "231595e6-0ef7-4224-8b37-9b8f164aa528",
   "name" : "sparql",
   "request" : {
-    "url" : "/sparql?query=%0APREFIX+dct:+%3Chttp://purl.org/dc/terms/%3E%0APREFIX+dcat:+%3Chttp://www.w3.org/ns/dcat%23%3E%0APREFIX+foaf:+%3Chttp://xmlns.com/foaf/0.1/%3E%0ASELECT+?organizationNumber+(COUNT(DISTINCT+?service)+AS+?count)%0AWHERE+%7B+GRAPH+%3Fg+%7B%0A++++?service+a+dcat:DataService+.%0A++++?record+foaf:primaryTopic+?service+.%0A++++?record+a+dcat:CatalogRecord+.%0A++++?service+dct:publisher+?publisher+.%0A++++?publisher+dct:identifier+?organizationNumber+.%0A%7D%7D%0AGROUP+BY+?organizationNumber",
+    "url" : "/sparql?query=%0APREFIX+dct:+%3Chttp://purl.org/dc/terms/%3E%0APREFIX+dcat:+%3Chttp://www.w3.org/ns/dcat%23%3E%0APREFIX+foaf:+%3Chttp://xmlns.com/foaf/0.1/%3E%0ASELECT+?organizationNumber+(COUNT(DISTINCT+?service)+AS+?count)%0AWHERE+%7B+GRAPH+?g+%7B%0A++++?service+a+dcat:DataService+.%0A++++?record+foaf:primaryTopic+?service+.%0A++++?record+a+dcat:CatalogRecord+.%0A++++?service+dct:publisher+?publisher+.%0A++++?publisher+dct:identifier+?organizationNumber+.%0A%7D%7D%0AGROUP+BY+?organizationNumber",
     "method" : "GET"
   },
   "response" : {
