@@ -19,6 +19,32 @@ spec:
     spec:
       containers:
         - name: fdk-organization-bff
+          env:
+            - name: ORGANIZATION_CATALOG_URI
+              valueFrom:
+                secretKeyRef:
+                  name: commonurl
+                  key: ORGANIZATION_CATALOG_BASE_URI
+            - name: FDK_METADATA_QUALITY_URI
+              valueFrom:
+                secretKeyRef:
+                  name: commonurl
+                  key: METADATA_QUALITY_ASSESSMENT_SERVICE_HOST
+            - name: FDK_PORTAL_URI
+              valueFrom:
+                secretKeyRef:
+                  name: commonurl
+                  key: FDK_NGINX_SEARCH_URI
+            - name: FDK_SPARQL_URI
+              valueFrom:
+                secretKeyRef:
+                  name: commonurl
+                  key: FDK_SPARQL_SERVICE_QUERY_URI
+            - name: CORS_ORIGIN_PATTERNS
+              valueFrom:
+                secretKeyRef:
+                  name: fdk-organization-bff
+                  key: CORS_ORIGIN_PATTERNS
           image: fdk-organization-bff
           imagePullPolicy: Always
           ports:
