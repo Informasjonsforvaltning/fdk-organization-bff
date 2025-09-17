@@ -14,4 +14,10 @@ from .org_catalog import OrgCatalog
 from .org_catalogs import OrgCatalogs
 from .ping import Ping
 from .ready import Ready
+from .reports import (
+    ConceptReportView,
+    DataServiceReportView,
+    DatasetsReportView,
+    InformationModelReportView,
+)
 from .state_categories import StateCategories

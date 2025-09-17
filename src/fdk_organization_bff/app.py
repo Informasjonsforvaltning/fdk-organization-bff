@@ -8,6 +8,10 @@ from aiohttp_middlewares import cors_middleware
 
 from fdk_organization_bff.config import Config
 from fdk_organization_bff.resources import (
+    ConceptReportView,
+    DataServiceReportView,
+    DatasetsReportView,
+    InformationModelReportView,
     MunicipalityCategories,
     OrgCatalog,
     OrgCatalogs,
@@ -27,6 +31,12 @@ def setup_routes(app: web.Application) -> None:
             web.get(Config.routes()["ORG_CATALOGS"], OrgCatalogs),
             web.get(Config.routes()["STATE_CATEGORIES"], StateCategories),
             web.get(Config.routes()["MUNICIPALITY_CATEGORIES"], MunicipalityCategories),
+            web.get(Config.routes()["CONCEPT_REPORT"], ConceptReportView),
+            web.get(Config.routes()["DATA_SERVICE_REPORT"], DataServiceReportView),
+            web.get(Config.routes()["DATASETS_REPORT"], DatasetsReportView),
+            web.get(
+                Config.routes()["INFORMATION_MODEL_REPORT"], InformationModelReportView
+            ),
         ]
     )
 

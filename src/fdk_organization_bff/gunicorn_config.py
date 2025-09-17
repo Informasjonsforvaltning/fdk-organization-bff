@@ -8,7 +8,7 @@ from typing import Any
 
 from dotenv import load_dotenv
 from gunicorn import glogging
-from pythonjsonlogger import jsonlogger
+from pythonjsonlogger import json
 
 load_dotenv()
 
@@ -24,7 +24,7 @@ loglevel = str(LOG_LEVEL)
 accesslog = "-"
 
 
-class StackdriverJsonFormatter(jsonlogger.JsonFormatter, object):
+class StackdriverJsonFormatter(json.JsonFormatter, object):
     """json log formatter."""
 
     def __init__(
@@ -35,7 +35,7 @@ class StackdriverJsonFormatter(jsonlogger.JsonFormatter, object):
         **kwargs: Any
     ) -> None:
         """Init json-logger."""
-        jsonlogger.JsonFormatter.__init__(self, fmt=fmt, *args, **kwargs)
+        json.JsonFormatter.__init__(self, fmt=fmt, *args, **kwargs)
 
     def process_log_record(self: Any, log_record: Any) -> Any:
         """Process log record to a json-format compatible with Stackdriver."""

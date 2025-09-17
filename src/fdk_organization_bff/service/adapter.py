@@ -9,20 +9,26 @@ from fdk_organization_bff.config import Config
 from fdk_organization_bff.sparql.concept_queries import (
     build_concepts_by_publisher_query,
     build_org_concepts_query,
+    concepts_report_query,
 )
 from fdk_organization_bff.sparql.dataservice_queries import (
     build_dataservices_by_publisher_query,
     build_org_dataservice_query,
+    data_services_report_query,
 )
 from fdk_organization_bff.sparql.dataset_queries import (
     build_datasets_by_publisher_query,
     build_nap_datasets_by_publisher_query,
     build_nap_org_datasets_query,
     build_org_datasets_query,
+    datasets_format_report_query,
+    datasets_general_report_query,
+    datasets_publisher_report_query,
 )
 from fdk_organization_bff.sparql.informationmodel_queries import (
     build_informationmodels_by_publisher_query,
     build_org_informationmodels_query,
+    info_models_report_query,
 )
 from fdk_organization_bff.utils.mappers import count_list_from_sparql_response
 from fdk_organization_bff.utils.utils import url_with_params
@@ -224,3 +230,41 @@ async def fetch_org_dataset_catalog_scores(
             return scores
         else:
             return dict()
+
+
+async def _query_report(query: str, session: ClientSession) -> List:
+    """Query report metrics from fdk-sparql-service."""
+    response = await query_sparql_service(query, session)
+    results = response.get("results")
+    bindings = results.get("bindings") if results else []
+    return bindings if bindings else []
+
+
+async def query_general_dataset_report_metrics(session: ClientSession) -> List:
+    """Query datasets report metrics from fdk-sparql-service."""
+    return await _query_report(datasets_general_report_query(), session)
+
+
+async def query_format_dataset_report_metrics(session: ClientSession) -> List:
+    """Query datasets report metrics from fdk-sparql-service."""
+    return await _query_report(datasets_format_report_query(), session)
+
+
+async def query_publisher_dataset_report_metrics(session: ClientSession) -> List:
+    """Query datasets report metrics from fdk-sparql-service."""
+    return await _query_report(datasets_publisher_report_query(), session)
+
+
+async def query_concepts_report(session: ClientSession) -> List:
+    """Query concepts report metrics from fdk-sparql-service."""
+    return await _query_report(concepts_report_query(), session)
+
+
+async def query_data_services_report(session: ClientSession) -> List:
+    """Query data services report metrics from fdk-sparql-service."""
+    return await _query_report(data_services_report_query(), session)
+
+
+async def query_information_models_report(session: ClientSession) -> List:
+    """Query information models report metrics from fdk-sparql-service."""
+    return await _query_report(info_models_report_query(), session)
