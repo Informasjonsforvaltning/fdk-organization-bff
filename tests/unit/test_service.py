@@ -82,11 +82,28 @@ async def test_get_organization_catalogs_empty_response(
     mock_session_instance.__aenter__.return_value = mock_session_instance
     mock_session_instance.__aexit__.return_value = None
 
-    # Mock the adapter functions
+    # Mock all the data fetching functions to return empty results
     with patch(
-        "fdk_organization_bff.service.org_catalog_service.fetch_organizations_from_organization_catalog"
-    ) as mock_fetch_orgs:
+        "fdk_organization_bff.service.org_catalog_service.fetch_organizations_for_org_paths"
+    ) as mock_fetch_orgs, \
+        patch(
+        "fdk_organization_bff.service.org_catalog_service.query_all_datasets_ordered_by_publisher"
+    ) as mock_datasets, \
+        patch(
+        "fdk_organization_bff.service.org_catalog_service.query_all_dataservices_ordered_by_publisher"
+    ) as mock_dataservices, \
+        patch(
+        "fdk_organization_bff.service.org_catalog_service.query_all_concepts_ordered_by_publisher"
+    ) as mock_concepts, \
+        patch(
+        "fdk_organization_bff.service.org_catalog_service.query_all_informationmodels_ordered_by_publisher"
+    ) as mock_informationmodels:
+        
         mock_fetch_orgs.return_value = {}
+        mock_datasets.return_value = []
+        mock_dataservices.return_value = []
+        mock_concepts.return_value = []
+        mock_informationmodels.return_value = []
 
         result = await org_catalog_service.get_organization_catalogs(
             FilterEnum.NONE, None

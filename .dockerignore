@@ -1,0 +1,63 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+build/
+dist/
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Testing
+tests/
+.pytest_cache/
+.cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+pytest.ini
+mypy.ini
+
+# Mock data
+mock_mappings/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Documentation
+*.md
+docs/
+README.md
+LICENSE
+
+# Deployment
+deploy/
+
+# Other config files
+noxfile.py
+fdk-organization-bff.yaml
