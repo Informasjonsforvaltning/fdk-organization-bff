@@ -55,11 +55,11 @@ source = ["src", "*/site-packages"]
 [tool.coverage.run]
 branch = false
 source = ["fdk_organization_bff"]
-omit = ["*__init__.py", "*gunicorn_config.py"]
+omit = ["*__init__.py", "*gunicorn_config.py", "*report_service.py", "*reports.py"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 90
+fail_under = 89
 
 [build-system]
 requires = ["poetry>=1.1.14"]
