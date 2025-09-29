@@ -91,3 +91,62 @@ WHERE {{
     ?publisher dct:identifier ?organizationNumber .
 }}
 GROUP BY ?organizationNumber"""
+
+
+def datasets_general_report_query() -> str:
+    """Query general metrics for datasets report."""
+    return """
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX fdk: <https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-reasoning-service/main/src/main/resources/ontology/fdk.owl#>
+SELECT ?dataset ?firstHarvested ?theme ?accessRights ?provenance ?isOpenData ?transportportal
+ WHERE {
+  ?dataset a dcat:Dataset .
+  ?record foaf:primaryTopic ?dataset .
+  ?record a dcat:CatalogRecord .
+  ?record dct:issued ?firstHarvested .
+
+  OPTIONAL { ?dataset dcat:theme ?theme . }
+  OPTIONAL { ?dataset dct:accessRights ?accessRights . }
+  OPTIONAL { ?dataset dct:provenance ?provenance . }
+  OPTIONAL { ?dataset fdk:isOpenData ?isOpenData . }
+  OPTIONAL { ?dataset fdk:isRelatedToTransportportal ?transportportal . }
+}"""
+
+
+def datasets_format_report_query() -> str:
+    """Query format metrics for datasets report."""
+    return """
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?dataset ?mediaType ?format
+WHERE {
+  ?dataset a dcat:Dataset .
+  ?record foaf:primaryTopic ?dataset .
+  ?record a dcat:CatalogRecord .
+
+  ?dataset dcat:distribution ?distribution .
+  ?distribution dcat:mediaType ?mediaType .
+  ?distribution dct:format ?format .
+}"""
+
+
+def datasets_publisher_report_query() -> str:
+    """Query publisher metrics for datasets report."""
+    return """
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX br: <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalog/main/src/main/resources/ontology/organization-catalog.owl#>
+SELECT ?dataset ?orgId ?orgPath
+WHERE {
+  ?dataset a dcat:Dataset .
+  ?record foaf:primaryTopic ?dataset .
+  ?record a dcat:CatalogRecord .
+
+  ?dataset dct:publisher ?publisher .
+  ?publisher dct:identifier ?orgId .
+  ?publisher br:orgPath ?orgPath .
+}"""

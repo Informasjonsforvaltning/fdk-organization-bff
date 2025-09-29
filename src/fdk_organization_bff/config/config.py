@@ -12,6 +12,7 @@ class Config:
 
     _ORG_CATALOG_PATH = "/organizationcatalogs"
     _ORG_CATEGORIES_PATH = "/organizationcategories"
+    _REPORTS_PATH = "/reports"
 
     _ROUTES = {
         "PING": "/ping",
@@ -20,6 +21,10 @@ class Config:
         "ORG_CATALOGS": _ORG_CATALOG_PATH,
         "STATE_CATEGORIES": _ORG_CATEGORIES_PATH + "/state",
         "MUNICIPALITY_CATEGORIES": _ORG_CATEGORIES_PATH + "/municipality",
+        "CONCEPT_REPORT": _REPORTS_PATH + "/concepts",
+        "DATA_SERVICE_REPORT": _REPORTS_PATH + "/data-services",
+        "DATASETS_REPORT": _REPORTS_PATH + "/datasets",
+        "INFORMATION_MODEL_REPORT": _REPORTS_PATH + "/information-models",
     }
     _ORGANIZATION_CATALOG_URI = os.getenv(
         "ORGANIZATION_CATALOG_URI",

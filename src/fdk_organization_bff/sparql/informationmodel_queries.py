@@ -41,3 +41,26 @@ def build_org_informationmodels_query(organization_id: str) -> str:
         }}
     """
     ).substitute(org_id=organization_id)
+
+
+def info_models_report_query() -> str:
+    """Query for information models report."""
+    return """
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX modelldcatno: <https://data.norge.no/vocabulary/modelldcatno#>
+PREFIX br: <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalog/main/src/main/resources/ontology/organization-catalog.owl#>
+ SELECT DISTINCT ?model ?firstHarvested ?orgId ?orgPath
+ WHERE {
+  ?model a modelldcatno:InformationModel .
+  ?record foaf:primaryTopic ?model .
+  ?record a dcat:CatalogRecord .
+  ?record dct:issued ?firstHarvested .
+
+  OPTIONAL {
+    ?model dct:publisher ?publisher .
+    ?publisher dct:identifier ?orgId .
+    ?publisher br:orgPath ?orgPath .
+  }
+}"""

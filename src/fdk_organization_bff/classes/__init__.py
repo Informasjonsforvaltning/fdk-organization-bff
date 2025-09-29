@@ -36,3 +36,9 @@ from fdk_organization_bff.classes.organization_details import OrganizationDetail
 from fdk_organization_bff.classes.organization_informationmodels import (
     OrganizationInformationmodels,
 )
+from fdk_organization_bff.classes.reports import (
+    ConceptReport,
+    DataServiceReport,
+    DatasetsReport,
+    InformationModelReport,
+)
