@@ -48,7 +48,7 @@ pytest-aiohttp = "^1.1.0"
 
 [tool.poetry.group.dev.dependencies]
 nox-poetry = "^1.2.0"
-safety = "^3.6.0"
+pip-audit = "^2.7.0"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
