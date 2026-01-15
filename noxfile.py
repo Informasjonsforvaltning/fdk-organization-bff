@@ -156,3 +156,10 @@ def coverage(session: Session) -> None:
     """Upload coverage data."""
     session.install("coverage[toml]")
     session.run("coverage", "xml", "--fail-under=0")
+
+
+@nox_poetry.session(python=["3.12"])
+def audit(session: Session) -> None:
+    """Run pip-audit security audit."""
+    session.install("pip-audit")
+    session.run("pip-audit")
