@@ -22,7 +22,7 @@ requests = "^2.32.5"
 aiohttp = "^3.13.2"
 python-json-logger = "^4.0.0"
 aiohttp-middlewares = "^2.4.0"
-pip = "^25.3"
+pip = "^26.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^9.0.2"
