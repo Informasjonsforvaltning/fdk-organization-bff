@@ -12,7 +12,6 @@ import pytest_mock
 import requests
 from requests.exceptions import ConnectionError
 
-
 load_dotenv()
 HOST_PORT = int(os.environ.get("HOST_PORT", "8080"))
 

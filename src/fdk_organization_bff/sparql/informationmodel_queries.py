@@ -24,8 +24,7 @@ def build_informationmodels_by_publisher_query() -> str:
 
 def build_org_informationmodels_query(organization_id: str) -> str:
     """Build query for an organizations informationmodels."""
-    return Template(
-        """
+    return Template("""
         PREFIX dct: <http://purl.org/dc/terms/>
         PREFIX dcat: <http://www.w3.org/ns/dcat#>
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -39,8 +38,7 @@ def build_org_informationmodels_query(organization_id: str) -> str:
             ?informationmodel dct:publisher ?publisher .
             ?publisher dct:identifier "$org_id" .
         }}
-    """
-    ).substitute(org_id=organization_id)
+    """).substitute(org_id=organization_id)
 
 
 def info_models_report_query() -> str:

@@ -22,8 +22,7 @@ GROUP BY ?organizationNumber"""
 
 def build_org_dataservice_query(organization_id: str) -> str:
     """Build query for an organizations dataservices."""
-    query_template = Template(
-        """
+    query_template = Template("""
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -36,8 +35,7 @@ WHERE {{
     ?record dct:issued ?issued .
     ?service dct:publisher ?publisher .
     ?publisher dct:identifier "$org_id" .
-}}"""
-    )
+}}""")
 
     return query_template.substitute(org_id=organization_id)
 
