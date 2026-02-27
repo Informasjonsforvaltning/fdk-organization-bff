@@ -3,7 +3,6 @@
 import os
 from typing import Dict, Type, TypeVar
 
-
 T = TypeVar("T", bound="Config")
 
 

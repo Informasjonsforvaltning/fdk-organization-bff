@@ -24,8 +24,7 @@ def build_concepts_by_publisher_query() -> str:
 
 def build_org_concepts_query(organization_id: str) -> str:
     """Build query for an organizations concepts."""
-    return Template(
-        """
+    return Template("""
         PREFIX dct: <http://purl.org/dc/terms/>
         PREFIX dcat: <http://www.w3.org/ns/dcat#>
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -39,8 +38,7 @@ def build_org_concepts_query(organization_id: str) -> str:
             ?concept dct:publisher ?publisher .
             ?publisher dct:identifier "$org_id" .
         }}
-    """
-    ).substitute(org_id=organization_id)
+    """).substitute(org_id=organization_id)
 
 
 def concepts_report_query() -> str:

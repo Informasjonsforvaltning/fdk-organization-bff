@@ -5,8 +5,7 @@ from string import Template
 
 def build_org_datasets_query(organization_id: str) -> str:
     """Build query for an organizations datasets."""
-    query_template = Template(
-        """
+    query_template = Template("""
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -22,16 +21,14 @@ WHERE {{
     OPTIONAL {{ ?dataset fdk:isAuthoritative ?isAuthoritative . }}
     ?dataset dct:publisher ?publisher .
     ?publisher dct:identifier "$org_id" .
-}}"""
-    )
+}}""")
 
     return query_template.substitute(org_id=organization_id)
 
 
 def build_nap_org_datasets_query(organization_id: str) -> str:
     """Build query for an organizations NAP datasets."""
-    query_template = Template(
-        """
+    query_template = Template("""
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -49,8 +46,7 @@ WHERE {{
     OPTIONAL {{ ?dataset fdk:isAuthoritative ?isAuthoritative . }}
     ?dataset dct:publisher ?publisher .
     ?publisher dct:identifier "$org_id" .
-}}"""
-    )
+}}""")
 
     return query_template.substitute(org_id=organization_id)
 
