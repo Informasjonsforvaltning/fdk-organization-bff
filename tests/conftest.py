@@ -1,6 +1,7 @@
 """Conftest module."""
 
 import os
+import shutil
 import time
 from typing import Any
 from unittest.mock import Mock
@@ -44,6 +45,15 @@ def docker_service(docker_ip: Any, docker_services: Any) -> Any:
 def docker_compose_file(pytestconfig: Any) -> Any:
     """Override default location of docker-compose.yml file."""
     return os.path.join(str(pytestconfig.rootdir), "./", "docker-compose.yml")
+
+
+@pytest.fixture(scope="session")
+def docker_compose_command() -> str:
+    """Use full path to docker so tests work with podman (docker→podman) or when PATH is minimal."""
+    docker_path = shutil.which("docker")
+    if docker_path:
+        return f"{docker_path} compose"
+    return "docker-compose"
 
 
 @pytest_asyncio.fixture(scope="function")
