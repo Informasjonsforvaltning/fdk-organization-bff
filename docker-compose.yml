@@ -16,7 +16,7 @@ services:
       - wiremock
 
   wiremock:
-    image: rodolpheche/wiremock
+    image: wiremock/wiremock:latest
     ports:
       - "9081:8080"
     volumes:

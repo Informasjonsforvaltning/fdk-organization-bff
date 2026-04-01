@@ -14,7 +14,7 @@ def url_with_params(url: str, params: Optional[Dict[str, str]]) -> str:
     if params and len(params) > 0:
         params_list = []
         for key in params:
-            params_list.append(f"{key}={quote_plus(params[key])}")
+            params_list.append(f"{key}={quote_plus(params[key], safe='/:?')}")
 
         seperator = "&"
         return f"{url}?{seperator.join(params_list)}"
