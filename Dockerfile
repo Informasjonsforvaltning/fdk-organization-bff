@@ -5,7 +5,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 WORKDIR /app
 
-RUN pip install "poetry==2.3.3"
+RUN pip install "poetry==2.3.4"
 COPY poetry.lock pyproject.toml /app/
 
 # Project initialization:
